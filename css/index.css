@@ -151,7 +151,7 @@ button {
   color: var(--mellowee-sage-800, #5c694e);
 }
 
-.search-panel {
+/* .search-panel {
   position: absolute;
   right: 0;
   left: 0;
@@ -164,8 +164,8 @@ button {
   border-bottom: 0.0625rem solid #e5e5e5;
   background: rgb(255 255 255 / 96%);
   box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 6%);
-}
-
+} */
+/* 
 .search-panel input {
   height: 3rem;
   padding: 0 1.125rem;
@@ -182,7 +182,7 @@ button {
   color: #fff;
   background: var(--mellowee-sage-500, #a1b889);
   font-weight: 700;
-}
+} */
 
 .hero {
   position: relative;
