@@ -1,9 +1,9 @@
 /* various */
 :root{
     /* each device font size 장치별 글씨 크기*/
-    --fs-pc:16px;
-    --fs-pad:14px;
-    --fs-mo:12px;
+    --fs-pc:1rem;
+    --fs-pad:0.875rem;
+    --fs-mo:0.75rem;
 
     /* space between the lines 행간*/
     --lh1:1.2;
@@ -104,7 +104,7 @@ html{
     color:var(--gray-900);
 }
 main{
-    margin-top: 154px;
+    margin-top: 9.625rem;
 }
 .common-frame{
     padding: 0 var(--space-2x-small);

@@ -39,7 +39,7 @@ button {
 }
 
 .page-shell {
-  width: min(100%, 1920px);
+  width: min(100%, 120rem);
   margin-inline: auto;
 }
 
@@ -130,7 +130,7 @@ button {
   height: 100%;
   align-items: center;
   justify-content: center;
-  gap: clamp(22px, 2.5vw, 48px);
+  gap: clamp(1.375rem, 2.5vw, 3rem);
   margin: 0 auto;
   padding: 0 3rem;
   list-style: none;
@@ -267,7 +267,7 @@ button {
 
 .pill-button:hover,
 .outline-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 
 .hero-controls {
@@ -366,8 +366,8 @@ button {
 }
 
 .best {
-  padding-top: 50px;
-  padding-bottom: 86px;
+  padding-top: 3.125rem;
+  padding-bottom: 5.375rem;
 }
 
 .product-grid {
@@ -431,7 +431,7 @@ button {
 .product-size {
   margin-top: 0.5rem !important;
   color: #999;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .product-info strong {
@@ -452,7 +452,7 @@ button {
   z-index: 2;
   height: 26.375rem;
   overflow: hidden;
-  border-radius: 0 250px 0 0;
+  border-radius: 0 15.625rem 0 0;
 }
 
 .story-image img {
@@ -467,8 +467,8 @@ button {
   justify-content: center;
   flex-direction: column;
   padding: 2rem 5rem 2rem 9vw;
-  border-top: 1px dashed var(--mellowee-sage-300, #cedac2);
-  border-bottom: 1px dashed var(--mellowee-sage-300, #cedac2);
+  border-top: 0.0625rem dashed var(--mellowee-sage-300, #cedac2);
+  border-bottom: 0.0625rem dashed var(--mellowee-sage-300, #cedac2);
 }
 
 .story-kicker {
@@ -482,7 +482,7 @@ button {
   margin: 0 0 1.75rem;
   color: var(--mellowee-sage-500, #a1b889);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 39px;
+  font-size: 2.4375rem;
   font-weight: 400;
   letter-spacing: -0.02em;
 }
@@ -534,7 +534,7 @@ button {
   display: block;
   height: 36.875rem;
   overflow: hidden;
-  border-radius: 295px;
+  border-radius: 18.4375rem;
 }
 
 .lookbook-image img {
@@ -551,7 +551,7 @@ button {
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(420px, 0.9fr) 1.6fr;
+  grid-template-columns: minmax(26.25rem, 0.9fr) 1.6fr;
   gap: 4.375rem;
   padding: 0 3rem 3.75rem;
 }
@@ -582,27 +582,27 @@ button {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .footer-links strong {
-  margin-bottom: 8px;
-  font-size: 16px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .footer-links a {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .customer-center strong {
   color: #121212;
-  font-size: 31px;
+  font-size: 1.9375rem;
 }
 
 .payment {
-  padding: 28px 48px 54px;
-  border-top: 1px solid #e5e5e5;
-  font-size: 14px;
+  padding: 1.75rem 3rem 3.375rem;
+  border-top: 0.0625rem solid #e5e5e5;
+  font-size: 0.875rem;
 }
 
 .payment strong {
