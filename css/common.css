@@ -1,0 +1,196 @@
+/* MELLOWEE color and typography tokens */
+
+:root {
+  /* Sage — base #A1B889 */
+  --mellowee-sage-050: #f7f9f6;
+  --mellowee-sage-100: #ecf1e7;
+  --mellowee-sage-200: #dee6d6;
+  --mellowee-sage-300: #cedac2;
+  --mellowee-sage-400: #b9caa7;
+  --mellowee-sage-500: #a1b889;
+  --mellowee-sage-600: #8a9e76;
+  --mellowee-sage-700: #748463;
+  --mellowee-sage-800: #5c694e;
+  --mellowee-sage-900: #444d3a;
+
+  /* Soft pink — base #F3AAAC */
+  --mellowee-pink-050: #fef8f8;
+  --mellowee-pink-100: #fdeeee;
+  --mellowee-pink-200: #fbe1e2;
+  --mellowee-pink-300: #f9d3d4;
+  --mellowee-pink-400: #f6bfc1;
+  --mellowee-pink-500: #f3aaac;
+  --mellowee-pink-600: #d19294;
+  --mellowee-pink-700: #af7a7c;
+  --mellowee-pink-800: #8b6162;
+  --mellowee-pink-900: #664748;
+
+  /* Warm beige — base #D7BA92 */
+  --mellowee-beige-050: #fcf9f6;
+  --mellowee-beige-100: #f7f1e9;
+  --mellowee-beige-200: #f1e7d9;
+  --mellowee-beige-300: #eadbc6;
+  --mellowee-beige-400: #e1cbad;
+  --mellowee-beige-500: #d7ba92;
+  --mellowee-beige-600: #b9a07e;
+  --mellowee-beige-700: #9b8669;
+  --mellowee-beige-800: #7b6a53;
+  --mellowee-beige-900: #5a4e3d;
+
+  /* Neutral black */
+  --mellowee-black-050: #f5f5f5;
+  --mellowee-black-100: #e5e5e5;
+  --mellowee-black-200: #cccccc;
+  --mellowee-black-300: #b2b2b2;
+  --mellowee-black-400: #999999;
+  --mellowee-black-500: #7f7f7f;
+  --mellowee-black-600: #666666;
+  --mellowee-black-700: #4c4c4c;
+  --mellowee-black-800: #262626;
+  --mellowee-black-900: #000000;
+
+  /* Semantic colors */
+  --color-primary: var(--mellowee-sage-500);
+  --color-primary-hover: var(--mellowee-sage-600);
+  --color-secondary: var(--mellowee-pink-500);
+  --color-accent: var(--mellowee-beige-500);
+  --color-text-primary: var(--mellowee-black-900);
+  --color-text-secondary: var(--mellowee-black-600);
+  --color-border: var(--mellowee-black-100);
+  --color-background: #ffffff;
+  --color-background-soft: var(--mellowee-beige-050);
+
+  /* Font */
+  --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* PC type scale: 1200px and wider */
+  --h1-size: 56px;
+  --h1-line-height: 1.2;
+  --h1-letter-spacing: -0.03em;
+  --h2-size: 48px;
+  --h2-line-height: 1.25;
+  --h2-letter-spacing: -0.03em;
+  --h3-size: 36px;
+  --h3-line-height: 1.3;
+  --h3-letter-spacing: -0.025em;
+  --h4-size: 28px;
+  --h4-line-height: 1.35;
+  --h4-letter-spacing: -0.02em;
+  --body1-size: 18px;
+  --body1-line-height: 1.6;
+  --body1-letter-spacing: -0.01em;
+  --body2-size: 16px;
+  --body2-line-height: 1.6;
+  --body2-letter-spacing: -0.01em;
+}
+
+/* PAD type scale: 768px–1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --h1-size: 48px;
+    --h2-size: 40px;
+    --h3-size: 32px;
+    --h4-size: 24px;
+    --body1-size: 17px;
+    --body2-size: 15px;
+  }
+}
+
+/* MO type scale: 767px and narrower */
+@media (max-width: 767px) {
+  :root {
+    --h1-size: 36px;
+    --h2-size: 30px;
+    --h3-size: 24px;
+    --h4-size: 20px;
+    --body1-size: 16px;
+    --body2-size: 14px;
+  }
+}
+
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-body1,
+.text-body2 {
+  margin: 0;
+  font-family: var(--font-family-base);
+}
+
+.text-h1 {
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+}
+
+.text-h2 {
+  font-size: var(--h2-size);
+  line-height: var(--h2-line-height);
+  letter-spacing: var(--h2-letter-spacing);
+}
+
+.text-h3 {
+  font-size: var(--h3-size);
+  line-height: var(--h3-line-height);
+  letter-spacing: var(--h3-letter-spacing);
+}
+
+.text-h4 {
+  font-size: var(--h4-size);
+  line-height: var(--h4-line-height);
+  letter-spacing: var(--h4-letter-spacing);
+}
+
+.text-body1 {
+  font-size: var(--body1-size);
+  line-height: var(--body1-line-height);
+  letter-spacing: var(--body1-letter-spacing);
+}
+
+.text-body2 {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  letter-spacing: var(--body2-letter-spacing);
+}
+
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Optional color utilities */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-soft {
+  background-color: var(--color-background-soft);
+}
+
+/*
+  Usage:
+  <h1 class="text-h1 font-bold">MELLOWEE KIDS</h1>
+  <p class="text-body1 font-regular">Little days, softly worn.</p>
+*/
