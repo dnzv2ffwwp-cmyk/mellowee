@@ -1,94 +1,131 @@
 /* MELLOWEE color and typography tokens */
 
 :root {
-  /* Sage — base #A1B889 */
-  --mellowee-sage-050: #f7f9f6;
-  --mellowee-sage-100: #ecf1e7;
-  --mellowee-sage-200: #dee6d6;
-  --mellowee-sage-300: #cedac2;
-  --mellowee-sage-400: #b9caa7;
-  --mellowee-sage-500: #a1b889;
-  --mellowee-sage-600: #8a9e76;
-  --mellowee-sage-700: #748463;
-  --mellowee-sage-800: #5c694e;
-  --mellowee-sage-900: #444d3a;
+  /* Font families */
+  
+  --font-pc: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-pad: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mo: "Roboto", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* Soft pink — base #F3AAAC */
-  --mellowee-pink-050: #fef8f8;
-  --mellowee-pink-100: #fdeeee;
-  --mellowee-pink-200: #fbe1e2;
-  --mellowee-pink-300: #f9d3d4;
-  --mellowee-pink-400: #f6bfc1;
-  --mellowee-pink-500: #f3aaac;
-  --mellowee-pink-600: #d19294;
-  --mellowee-pink-700: #af7a7c;
-  --mellowee-pink-800: #8b6162;
-  --mellowee-pink-900: #664748;
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
 
-  /* Warm beige — base #D7BA92 */
-  --mellowee-beige-050: #fcf9f6;
-  --mellowee-beige-100: #f7f1e9;
-  --mellowee-beige-200: #f1e7d9;
-  --mellowee-beige-300: #eadbc6;
-  --mellowee-beige-400: #e1cbad;
-  --mellowee-beige-500: #d7ba92;
-  --mellowee-beige-600: #b9a07e;
-  --mellowee-beige-700: #9b8669;
-  --mellowee-beige-800: #7b6a53;
-  --mellowee-beige-900: #5a4e3d;
+  /* PC text styles */
+  --fs-pc-h1: 39px;
+  --fs-pc-h2: 31px;
+  --fs-pc-h3: 25px;
+  --fs-pc-h4: 20px;
+  --fs-pc-body1: 16px;
+  --fs-pc-body2: 13px;
+  --fs-pc-detail: 10px;
+  --lh-pc-h1: normal;
+  --lh-pc-h2: normal;
+  --lh-pc-h3: 1.4;
+  --lh-pc-h4: 1.4;
+  --lh-pc-body1: 1.4;
+  --lh-pc-body2: 1.4;
+  --lh-pc-detail: 1.4;
 
-  /* Neutral black */
-  --mellowee-black-050: #f5f5f5;
-  --mellowee-black-100: #e5e5e5;
-  --mellowee-black-200: #cccccc;
-  --mellowee-black-300: #b2b2b2;
-  --mellowee-black-400: #999999;
-  --mellowee-black-500: #7f7f7f;
-  --mellowee-black-600: #666666;
-  --mellowee-black-700: #4c4c4c;
-  --mellowee-black-800: #262626;
-  --mellowee-black-900: #000000;
+  /* Pad text styles */
+  --fs-pad-h1: 34px;
+  --fs-pad-h2: 27px;
+  --fs-pad-h3: 22px;
+  --fs-pad-h4: 18px;
+  --fs-pad-body1: 14px;
+  --fs-pad-body2: 11px;
+  --fs-pad-detail: 9px;
+  --lh-pad-h1: normal;
+  --lh-pad-h2: normal;
+  --lh-pad-h3: normal;
+  --lh-pad-h4: normal;
+  --lh-pad-body1: normal;
+  --lh-pad-body2: normal;
+  --lh-pad-detail: normal;
 
-  /* Semantic colors */
-  --color-primary: var(--mellowee-sage-500);
-  --color-primary-hover: var(--mellowee-sage-600);
-  --color-secondary: var(--mellowee-pink-500);
-  --color-accent: var(--mellowee-beige-500);
-  --color-text-primary: var(--mellowee-black-900);
-  --color-text-secondary: var(--mellowee-black-600);
-  --color-border: var(--mellowee-black-100);
-  --color-background: #ffffff;
-  --color-background-soft: var(--mellowee-beige-050);
+  /* Mobile text styles */
+  --fs-mo-h1: 19px;
+  --fs-mo-h2: 17px;
+  --fs-mo-h3: 15px;
+  --fs-mo-h4: 14px;
+  --fs-mo-body1: 12px;
+  --fs-mo-body2: 11px;
+  --fs-mo-detail: 9px;
+  --lh-mo-h1: normal;
+  --lh-mo-h2: normal;
+  --lh-mo-h3: normal;
+  --lh-mo-h4: normal;
+  --lh-mo-body1: normal;
+  --lh-mo-body2: normal;
+  --lh-mo-detail: normal;
 
-  /* Font */
-  --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  /* Main colors */
+  --mellowy-main-green: #A1B889;
+  --mellowy-main-pink: #F3AAAC;
+  --mellowy-main-beige: #D7BA92;
 
-  /* PC type scale: 1200px and wider */
-  --h1-size: 56px;
-  --h1-line-height: 1.2;
-  --h1-letter-spacing: -0.03em;
-  --h2-size: 48px;
-  --h2-line-height: 1.25;
-  --h2-letter-spacing: -0.03em;
-  --h3-size: 36px;
-  --h3-line-height: 1.3;
-  --h3-letter-spacing: -0.025em;
-  --h4-size: 28px;
-  --h4-line-height: 1.35;
-  --h4-letter-spacing: -0.02em;
-  --body1-size: 18px;
-  --body1-line-height: 1.6;
-  --body1-letter-spacing: -0.01em;
-  --body2-size: 16px;
-  --body2-line-height: 1.6;
-  --body2-letter-spacing: -0.01em;
+  /* Primary — green */
+  --mellowy-primary-050: #F2F7EE;
+  --mellowy-primary-100: #E3EBDB;
+  --mellowy-primary-200: #D0DDC3;
+  --mellowy-primary-300: #BDCEAB;
+  --mellowy-primary-400: #AEC399;
+  --mellowy-primary-500: #A1B889;
+  --mellowy-primary-600: #8AA271;
+  --mellowy-primary-700: #73895C;
+  --mellowy-primary-800: #5E704B;
+  --mellowy-primary-900: #475538;
+
+  /* Black / neutral */
+  --mellowy-black-000: #FFFFFF;
+  --mellowy-black-050: #F5F5F5;
+  --mellowy-black-100: #E5E5E5;
+  --mellowy-black-200: #CCCCCC;
+  --mellowy-black-300: #B2B2B2;
+  --mellowy-black-400: #999999;
+  --mellowy-black-500: #7F7F7F;
+  --mellowy-black-600: #666666;
+  --mellowy-black-700: #4C4C4C;
+  --mellowy-black-800: #121212;
+  --mellowy-black-900: #000000;
+
+  /* Pink */
+  --mellowy-pink-050: #FEF8F8;
+  --mellowy-pink-100: #FDEEEE;
+  --mellowy-pink-200: #FBE1E2;
+  --mellowy-pink-300: #F9D5D6;
+  --mellowy-pink-400: #F6BFC1;
+  --mellowy-pink-500: #F3AAAC;
+  --mellowy-pink-600: #CF9192;
+  --mellowy-pink-700: #AA7778;
+  --mellowy-pink-800: #7A5556;
+  --mellowy-pink-900: #493334;
+
+  /* Beige */
+  --mellowy-beige-050: #FCF9F6;
+  --mellowy-beige-100: #F7F1E9;
+  --mellowy-beige-200: #F1E7D9;
+  --mellowy-beige-300: #EBDDC9;
+  --mellowy-beige-400: #E1CBAD;
+  --mellowy-beige-500: #D7BA92;
+  --mellowy-beige-600: #B79E7C;
+  --mellowy-beige-700: #978266;
+  --mellowy-beige-800: #6C5D49;
+  --mellowy-beige-900: #41382C;
+
+  /* Figma local color variables */
+  --color-kakao: #FEE500;
+  --color-naver: #03A94D;
+  --color-selection: #1967D2;
+  --color-danger: #E62C2C;
+
+  /* External library paint styles used on node 38:615 */
+  --color-main-khaki-000: #FFFFFF;
+  --color-main-khaki-500: #5F7F56;
 }
 
 /* PAD type scale: 768px–1199px */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   :root {
     --h1-size: 48px;
     --h2-size: 40px;
