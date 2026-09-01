@@ -1,8 +1,16 @@
-/* MELLOWEE color and typography tokens */
+@charset "UTF-8";
+
+/*
+ * MELLOWEE — Figma local styles → CSS
+ * Source file: fO8YvuSxVdMpb8JnBeEsuw
+ * Generated: 2026-09-01
+ *
+ * Font files are not bundled here. Load Pretendard and Roboto in the project
+ * before using these classes. Figma's AUTO line height maps to CSS `normal`.
+ */
 
 :root {
   /* Font families */
-  
   --font-pc: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-pad: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mo: "Roboto", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -124,110 +132,273 @@
   --color-main-khaki-500: #5F7F56;
 }
 
-/* PAD type scale: 768px–1199px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  :root {
-    --h1-size: 48px;
-    --h2-size: 40px;
-    --h3-size: 32px;
-    --h4-size: 24px;
-    --body1-size: 17px;
-    --body2-size: 15px;
-  }
+/* Shared Figma text-style properties */
+[class^="text-pc-"],
+[class*=" text-pc-"] {
+  font-family: var(--font-pc);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
 }
 
-/* MO type scale: 767px and narrower */
-@media (max-width: 767px) {
-  :root {
-    --h1-size: 36px;
-    --h2-size: 30px;
-    --h3-size: 24px;
-    --h4-size: 20px;
-    --body1-size: 16px;
-    --body2-size: 14px;
-  }
+[class^="text-pad-"],
+[class*=" text-pad-"] {
+  font-family: var(--font-pad);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
 }
 
-body {
-  color: var(--color-text-primary);
-  background-color: var(--color-background);
-  font-family: var(--font-family-base);
-  font-weight: var(--font-weight-regular);
+[class^="text-mo-"],
+[class*=" text-mo-"] {
+  font-family: var(--font-mo);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
 }
 
+/* PC: one-to-one mappings for Figma PC styles */
+.text-pc-h1-regular,
+.text-pc-h1-bold {
+  font-size: var(--fs-pc-h1);
+  line-height: var(--lh-pc-h1);
+}
+
+.text-pc-h2-regular,
+.text-pc-h2-bold {
+  font-size: var(--fs-pc-h2);
+  line-height: var(--lh-pc-h2);
+}
+
+.text-pc-h3-regular,
+.text-pc-h3-bold {
+  font-size: var(--fs-pc-h3);
+  line-height: var(--lh-pc-h3);
+}
+
+.text-pc-h4-regular,
+.text-pc-h4-bold {
+  font-size: var(--fs-pc-h4);
+  line-height: var(--lh-pc-h4);
+}
+
+.text-pc-body1-regular,
+.text-pc-body1-bold {
+  font-size: var(--fs-pc-body1);
+  line-height: var(--lh-pc-body1);
+}
+
+.text-pc-body2-regular,
+.text-pc-body2-bold {
+  font-size: var(--fs-pc-body2);
+  line-height: var(--lh-pc-body2);
+}
+
+.text-pc-detail-regular,
+.text-pc-detail-bold {
+  font-size: var(--fs-pc-detail);
+  line-height: var(--lh-pc-detail);
+}
+
+/* Pad: one-to-one mappings for Figma pad styles */
+.text-pad-h1-regular,
+.text-pad-h1-bold {
+  font-size: var(--fs-pad-h1);
+  line-height: var(--lh-pad-h1);
+}
+
+.text-pad-h2-regular,
+.text-pad-h2-bold {
+  font-size: var(--fs-pad-h2);
+  line-height: var(--lh-pad-h2);
+}
+
+.text-pad-h3-regular,
+.text-pad-h3-bold {
+  font-size: var(--fs-pad-h3);
+  line-height: var(--lh-pad-h3);
+}
+
+.text-pad-h4-regular,
+.text-pad-h4-bold {
+  font-size: var(--fs-pad-h4);
+  line-height: var(--lh-pad-h4);
+}
+
+.text-pad-body1-regular,
+.text-pad-body1-bold {
+  font-size: var(--fs-pad-body1);
+  line-height: var(--lh-pad-body1);
+}
+
+.text-pad-body2-regular,
+.text-pad-body2-bold {
+  font-size: var(--fs-pad-body2);
+  line-height: var(--lh-pad-body2);
+}
+
+.text-pad-detail-regular,
+.text-pad-detail-bold {
+  font-size: var(--fs-pad-detail);
+  line-height: var(--lh-pad-detail);
+}
+
+/* Mobile: one-to-one mappings for Figma mo styles */
+.text-mo-h1-regular,
+.text-mo-h1-bold {
+  font-size: var(--fs-mo-h1);
+  line-height: var(--lh-mo-h1);
+}
+
+.text-mo-h2-regular,
+.text-mo-h2-bold {
+  font-size: var(--fs-mo-h2);
+  line-height: var(--lh-mo-h2);
+}
+
+.text-mo-h3-regular,
+.text-mo-h3-bold {
+  font-size: var(--fs-mo-h3);
+  line-height: var(--lh-mo-h3);
+}
+
+.text-mo-h4-regular,
+.text-mo-h4-bold {
+  font-size: var(--fs-mo-h4);
+  line-height: var(--lh-mo-h4);
+}
+
+.text-mo-body1-regular,
+.text-mo-body1-bold {
+  font-size: var(--fs-mo-body1);
+  line-height: var(--lh-mo-body1);
+}
+
+.text-mo-body2-regular,
+.text-mo-body2-bold {
+  font-size: var(--fs-mo-body2);
+  line-height: var(--lh-mo-body2);
+}
+
+.text-mo-detail-regular,
+.text-mo-detail-bold {
+  font-size: var(--fs-mo-detail);
+  line-height: var(--lh-mo-detail);
+}
+
+/* Weight mappings for all 42 Figma text styles */
+.text-pc-h1-regular,
+.text-pc-h2-regular,
+.text-pc-h3-regular,
+.text-pc-h4-regular,
+.text-pc-body1-regular,
+.text-pc-body2-regular,
+.text-pc-detail-regular,
+.text-pad-h1-regular,
+.text-pad-h2-regular,
+.text-pad-h3-regular,
+.text-pad-h4-regular,
+.text-pad-body1-regular,
+.text-pad-body2-regular,
+.text-pad-detail-regular,
+.text-mo-h1-regular,
+.text-mo-h2-regular,
+.text-mo-h3-regular,
+.text-mo-h4-regular,
+.text-mo-body1-regular,
+.text-mo-body2-regular,
+.text-mo-detail-regular {
+  font-weight: var(--fw-regular);
+}
+
+.text-pc-h1-bold,
+.text-pc-h2-bold,
+.text-pc-h3-bold,
+.text-pc-h4-bold,
+.text-pc-body1-bold,
+.text-pc-body2-bold,
+.text-pc-detail-bold,
+.text-pad-h1-bold,
+.text-pad-h2-bold,
+.text-pad-h3-bold,
+.text-pad-h4-bold,
+.text-pad-body1-bold,
+.text-pad-body2-bold,
+.text-pad-detail-bold,
+.text-mo-h1-bold,
+.text-mo-h2-bold,
+.text-mo-h3-bold,
+.text-mo-h4-bold,
+.text-mo-body1-bold,
+.text-mo-body2-bold,
+.text-mo-detail-bold {
+  font-weight: var(--fw-bold);
+}
+
+/*
+ * Optional responsive semantic classes.
+ * PC: 1200px+, Pad: 768–1199px, Mobile: 0–767px.
+ * Add `.is-bold` when the Figma Bold style is required.
+ */
 .text-h1,
 .text-h2,
 .text-h3,
 .text-h4,
 .text-body1,
-.text-body2 {
-  margin: 0;
-  font-family: var(--font-family-base);
+.text-body2,
+.text-detail {
+  font-family: var(--font-pc);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
 }
 
-.text-h1 {
-  font-size: var(--h1-size);
-  line-height: var(--h1-line-height);
-  letter-spacing: var(--h1-letter-spacing);
+.text-h1 { font-size: var(--fs-pc-h1); line-height: var(--lh-pc-h1); }
+.text-h2 { font-size: var(--fs-pc-h2); line-height: var(--lh-pc-h2); }
+.text-h3 { font-size: var(--fs-pc-h3); line-height: var(--lh-pc-h3); }
+.text-h4 { font-size: var(--fs-pc-h4); line-height: var(--lh-pc-h4); }
+.text-body1 { font-size: var(--fs-pc-body1); line-height: var(--lh-pc-body1); }
+.text-body2 { font-size: var(--fs-pc-body2); line-height: var(--lh-pc-body2); }
+.text-detail { font-size: var(--fs-pc-detail); line-height: var(--lh-pc-detail); }
+.is-bold { font-weight: var(--fw-bold); }
+
+@media (max-width: 1199px) {
+  .text-h1,
+  .text-h2,
+  .text-h3,
+  .text-h4,
+  .text-body1,
+  .text-body2,
+  .text-detail {
+    font-family: var(--font-pad);
+  }
+
+  .text-h1 { font-size: var(--fs-pad-h1); line-height: var(--lh-pad-h1); }
+  .text-h2 { font-size: var(--fs-pad-h2); line-height: var(--lh-pad-h2); }
+  .text-h3 { font-size: var(--fs-pad-h3); line-height: var(--lh-pad-h3); }
+  .text-h4 { font-size: var(--fs-pad-h4); line-height: var(--lh-pad-h4); }
+  .text-body1 { font-size: var(--fs-pad-body1); line-height: var(--lh-pad-body1); }
+  .text-body2 { font-size: var(--fs-pad-body2); line-height: var(--lh-pad-body2); }
+  .text-detail { font-size: var(--fs-pad-detail); line-height: var(--lh-pad-detail); }
 }
 
-.text-h2 {
-  font-size: var(--h2-size);
-  line-height: var(--h2-line-height);
-  letter-spacing: var(--h2-letter-spacing);
-}
+@media (max-width: 767px) {
+  .text-h1,
+  .text-h2,
+  .text-h3,
+  .text-h4,
+  .text-body1,
+  .text-body2,
+  .text-detail {
+    font-family: var(--font-mo);
+  }
 
-.text-h3 {
-  font-size: var(--h3-size);
-  line-height: var(--h3-line-height);
-  letter-spacing: var(--h3-letter-spacing);
+  .text-h1 { font-size: var(--fs-mo-h1); line-height: var(--lh-mo-h1); }
+  .text-h2 { font-size: var(--fs-mo-h2); line-height: var(--lh-mo-h2); }
+  .text-h3 { font-size: var(--fs-mo-h3); line-height: var(--lh-mo-h3); }
+  .text-h4 { font-size: var(--fs-mo-h4); line-height: var(--lh-mo-h4); }
+  .text-body1 { font-size: var(--fs-mo-body1); line-height: var(--lh-mo-body1); }
+  .text-body2 { font-size: var(--fs-mo-body2); line-height: var(--lh-mo-body2); }
+  .text-detail { font-size: var(--fs-mo-detail); line-height: var(--lh-mo-detail); }
 }
-
-.text-h4 {
-  font-size: var(--h4-size);
-  line-height: var(--h4-line-height);
-  letter-spacing: var(--h4-letter-spacing);
-}
-
-.text-body1 {
-  font-size: var(--body1-size);
-  line-height: var(--body1-line-height);
-  letter-spacing: var(--body1-letter-spacing);
-}
-
-.text-body2 {
-  font-size: var(--body2-size);
-  line-height: var(--body2-line-height);
-  letter-spacing: var(--body2-letter-spacing);
-}
-
-.font-regular {
-  font-weight: var(--font-weight-regular);
-}
-
-.font-bold {
-  font-weight: var(--font-weight-bold);
-}
-
-/* Optional color utilities */
-.text-primary {
-  color: var(--color-primary);
-}
-
-.text-secondary {
-  color: var(--color-text-secondary);
-}
-
-.bg-primary {
-  background-color: var(--color-primary);
-}
-
-.bg-soft {
-  background-color: var(--color-background-soft);
-}
-
-/*
-  Usage:
-  <h1 class="text-h1 font-bold">MELLOWEE KIDS</h1>
-  <p class="text-body1 font-regular">Little days, softly worn.</p>
-*/
