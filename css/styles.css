@@ -348,7 +348,6 @@ button {
   display: block;
   overflow: hidden;
   aspect-ratio: 1;
-  border-radius: 50%;
   background: #fff;
 }
 
