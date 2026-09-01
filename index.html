@@ -8,39 +8,38 @@
       content="아이들의 작은 하루를 편안하고 부드럽게 담아내는 멜로위 키즈웨어"
     />
     <title>MELLOWEE KIDS</title>
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./tokens.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="header-top page-shell">
-        <a class="brand-logo" href="#top" aria-label="멜로위 홈">
+        <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">
           <img
-            src="https://www.figma.com/api/mcp/asset/f44ee4ec-186a-4ed8-96a6-46edd2bd9957.svg"
+            src="./assets/mellowee-logo.svg"
             alt="MELLOWEE"
             data-hide-on-error
           />
-          <span class="brand-logo__fallback" aria-hidden="true"></span>
+          <span class="brand-logo__fallback" aria-hidden="true">MELLOWEE</span>
         </a>
 
         <ul class="utility-menu" aria-label="사용자 메뉴">
           <li>
-            <a href="#signup">
+            <a href="./login.html#signup">
               <img
-                src="icon/회원가입.svg"
-                alt="회원가입 아이콘"
+                src="./assets/icon-signup.svg"
+                alt=""
                 data-hide-on-error
               />
               <span>회원가입</span>
             </a>
           </li>
           <li>
-            <a href="#login">
+            <a href="./login.html">
               <img
-                src="icon/로그인.svg"
-                alt="로그인 아이콘"
+                src="./assets/icon-login.svg"
+                alt=""
                 data-hide-on-error
               />
               <span>LOG IN</span>
@@ -49,8 +48,8 @@
           <li>
             <button type="button" data-search-button>
               <img
-                src="icon/검색.svg"
-                alt="검색 아이콘"
+                src="./assets/icon-search.svg"
+                alt=""
                 data-hide-on-error
               />
               <span>SEARCH</span>
@@ -59,8 +58,8 @@
           <li>
             <a href="#cart">
               <img
-                src="icon/장바구니.svg"
-                alt="장바구니 아이콘"
+                src="./assets/icon-cart.svg"
+                alt=""
                 data-hide-on-error
               />
               <span>CART</span>
@@ -71,29 +70,29 @@
 
       <nav class="main-nav" aria-label="주요 메뉴">
         <ul class="page-shell">
-          <li><a href="#story">BRAND STORY</a></li>
-          <li><a href="#new-items">COLLECTION</a></li>
-          <li><a href="#new-items">NEW BORN (0-3개월)</a></li>
-          <li><a href="#best">BABY (0-3세)</a></li>
-          <li><a href="#best">KIDS (3-8세)</a></li>
-          <li><a href="#lookbook">JUNIOR (8-13세)</a></li>
-          <li><a href="#best">ACC</a></li>
-          <li><a href="#instagram">GIFT SETS</a></li>
+          <li><a href="./brand-story.html">BRAND STORY</a></li>
+          <li><a href="./product-list.html">COLLECTION</a></li>
+          <li><a href="./product-list.html?category=newborn">NEW BORN (0-3개월)</a></li>
+          <li><a href="./product-list.html?category=baby">BABY (0-3세)</a></li>
+          <li><a href="./product-list.html?category=kids">KIDS (3-8세)</a></li>
+          <li><a href="./product-list.html?category=junior">JUNIOR (8-13세)</a></li>
+          <li><a href="./product-list.html?category=acc">ACC</a></li>
+          <li><a href="./product-list.html?category=gift">GIFT SETS</a></li>
           <li><a href="#instagram">EVENT</a></li>
         </ul>
       </nav>
 
-      <!-- <form class="search-panel page-shell" role="search" data-search-panel hidden>
+      <form class="search-panel page-shell" role="search" data-search-panel hidden>
         <label for="site-search">상품 검색</label>
         <input id="site-search" type="search" placeholder="찾고 싶은 상품을 입력해 주세요" />
         <button type="submit">검색</button>
-      </form> -->
+      </form>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="메인 슬라이드">
         <article class="hero-slide is-active" data-slide>
-          <img src="img/banner/01-sage-studio-banner%201.jpg" alt="세이지 컬러 옷을 입은 아이" />
+          <img src="./assets/hero-sage.png" alt="세이지 컬러 옷을 입은 아이" />
           <div class="hero-copy">
             <p class="eyebrow">MELLOWEE KIDS</p>
             <h1>Little days, softly worn.</h1>
@@ -105,7 +104,7 @@
           </div>
         </article>
         <article class="hero-slide" data-slide>
-          <img src="img/banner/02-butter-meadow-banner%201.jpg" alt="들판을 걷는 두 아이" />
+          <img src="./assets/hero-butter.png" alt="들판을 걷는 두 아이" />
           <div class="hero-copy">
             <p class="eyebrow">MELLOWEE SPRING</p>
             <h2>Soft colors for little days.</h2>
@@ -114,7 +113,7 @@
           </div>
         </article>
         <article class="hero-slide" data-slide>
-          <img src="img/banner/03-cozy-playroom-banner%201.jpg" alt="블록을 만지는 아이" />
+          <img src="./assets/hero-playroom.png" alt="블록을 만지는 아이" />
           <div class="hero-copy">
             <p class="eyebrow">COMFORT IN MOTION</p>
             <h2>Made for every little move.</h2>
@@ -123,7 +122,7 @@
           </div>
         </article>
         <article class="hero-slide" data-slide>
-          <img src="img/banner/04-seasonal-flatlay-banner%201.jpg" alt="멜로위 시즌 의류 컬렉션" />
+          <img src="./assets/hero-flatlay.png" alt="멜로위 시즌 의류 컬렉션" />
           <div class="hero-copy">
             <p class="eyebrow">MELLOWEE ESSENTIALS</p>
             <h2>Easy pieces, softly matched.</h2>
@@ -132,7 +131,7 @@
           </div>
         </article>
         <article class="hero-slide" data-slide>
-          <img src="img/banner/05-soft-blue-curtain-banner%201.jpg" alt="커튼 앞에서 웃는 아이" />
+          <img src="./assets/hero-soft-blue.png" alt="커튼 앞에서 웃는 아이" />
           <div class="hero-copy">
             <p class="eyebrow">A QUIET BLUE DAY</p>
             <h2>Calm, light and comfortable.</h2>
@@ -159,13 +158,13 @@
 
         <div class="new-gallery">
           <figure class="new-card">
-            <img src="./img/lookbook/룩북 (1) 1.jpg" alt="브라운 신상품을 입은 아이" />
+            <img src="./assets/new-item-1.png" alt="브라운 신상품을 입은 아이" />
           </figure>
           <figure class="new-card">
-            <img src="./img/lookbook/룩북 (2) 1.jpg" alt="버터 옐로우 신상품을 입은 아이" />
+            <img src="./assets/new-item-2.png" alt="버터 옐로우 신상품을 입은 아이" />
           </figure>
           <figure class="new-card">
-            <img src="./img/lookbook/룩북 (3) 1.jpg" alt="세이지 신상품을 입은 아이" />
+            <img src="./assets/new-item-3.png" alt="세이지 신상품을 입은 아이" />
           </figure>
         </div>
       </section>
@@ -174,8 +173,8 @@
         <h2 class="section-title">BEST</h2>
         <div class="product-grid">
           <article class="product-card">
-            <a class="product-thumb" href="#product-1">
-              <img src="./img/best/04-soft-blue-overalls 1.jpg" />
+            <a class="product-thumb" href="./product-detail.html">
+              <img src="./assets/product-soft-blue-overalls.png" alt="구름빛 소프트 오버롤" />
               <span class="product-badge">New!</span>
             </a>
             <div class="product-info">
@@ -185,8 +184,8 @@
             </div>
           </article>
           <article class="product-card">
-            <a class="product-thumb" href="#product-2">
-              <img src="./img/best/05-dusty-pink-dress 1.jpg" />
+            <a class="product-thumb" href="./product-detail.html">
+              <img src="./assets/product-dusty-pink-dress.png" alt="로지 플라워 셔링 세트" />
               <span class="product-badge">New!</span>
             </a>
             <div class="product-info">
@@ -196,8 +195,8 @@
             </div>
           </article>
           <article class="product-card">
-            <a class="product-thumb" href="#product-3">
-              <img src="./img/best/03-butter-cardigan 1.jpg" />
+            <a class="product-thumb" href="./product-detail.html">
+              <img src="./assets/product-butter-cardigan.png" alt="버터 포근 니트 가디건" />
               <span class="product-badge">New!</span>
             </a>
             <div class="product-info">
@@ -207,8 +206,8 @@
             </div>
           </article>
           <article class="product-card">
-            <a class="product-thumb" href="#product-4">
-              <img src="./img/best/01-sage-romper 1.jpg" alt="세이지 숨결 코튼 롬퍼" />
+            <a class="product-thumb" href="./product-detail.html">
+              <img src="./assets/product-sage-romper.png" alt="세이지 숨결 코튼 롬퍼" />
               <span class="product-badge">New!</span>
             </a>
             <div class="product-info">
@@ -222,7 +221,7 @@
 
       <section class="story section page-shell" id="story">
         <div class="story-image">
-          <img src="./img/banner/띠배너-pc.jpg" alt="함께 그림책을 보는 아이들" />
+          <img src="./assets/brand-story.png" alt="함께 그림책을 보는 아이들" />
         </div>
         <div class="story-copy">
           <p class="story-kicker">작은 하루를 부드럽게 감싸는 옷</p>
@@ -231,17 +230,17 @@
             멜로위는 아이가 오랜 시간 편안하게 입고, 보호자가 부담 없이 선택할 수 있는 옷을 만듭니다.<br />
             특별한 날뿐 아니라 평범한 하루에도 자연스럽게 스며드는 키즈웨어를 제안합니다.
           </p>
-          <a class="pill-button" href="#about">ABOUT US</a>
+          <a class="pill-button" href="./brand-story.html">ABOUT US</a>
         </div>
       </section>
 
       <section class="instagram section page-shell" id="instagram">
         <h2 class="section-title">INSTAGRAM</h2>
         <div class="instagram-grid">
-          <a href="#event-welcome"><img src="./img/sns/01-welcome-gift 1.jpg" alt="Welcome Gift 이벤트" /></a>
-          <a href="#event-shipping"><img src="./img/sns/02-free-shipping 1.jpg" alt="Free Shipping 이벤트" /></a>
-          <a href="#event-special"><img src="./img/sns/03-special-gift 1.jpg" alt="Special Gift 이벤트" /></a>
-          <a href="#event-season"><img src="./img/sns/04-season-sale 1.jpg" alt="Season Sale 이벤트" /></a>
+          <a href="#event-welcome"><img src="./assets/event-welcome-gift.png" alt="Welcome Gift 이벤트" /></a>
+          <a href="#event-shipping"><img src="./assets/event-free-shipping.png" alt="Free Shipping 이벤트" /></a>
+          <a href="#event-special"><img src="./assets/event-special-gift.png" alt="Special Gift 이벤트" /></a>
+          <a href="#event-season"><img src="./assets/event-season-sale.png" alt="Season Sale 이벤트" /></a>
         </div>
       </section>
 
@@ -252,7 +251,7 @@
           <a class="outline-button" href="#lookbook-more">더보기</a>
         </div>
         <a class="lookbook-image" href="#lookbook-more">
-          <img src="./img/lookbook/룩북이미지 하단.jpg" alt="정원을 걷는 아이들의 멜로위 룩북" />
+          <img src="./assets/lookbook-hero.png" alt="정원을 걷는 아이들의 멜로위 룩북" />
         </a>
       </section>
     </main>
