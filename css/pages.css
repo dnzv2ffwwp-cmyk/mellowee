@@ -727,15 +727,12 @@ body.subpage {
   .subpage-header .header-top { height: 78px; justify-content: flex-start; padding: 0 18px; }
   .subpage-header .brand-logo { width: 145px; justify-items: start; }
   .subpage-header .word-logo { font-size: 21px; }
-  .subpage-header .utility-menu { top: 19px; right: 14px; grid-template-columns: repeat(4, 40px); }
+  .subpage-header .utility-menu { top: 19px; right: 14px; grid-template-columns: repeat(3, 40px); }
   .subpage-header .utility-menu a,
   .subpage-header .utility-menu button { height: 42px; justify-content: center; }
   .subpage-header .utility-menu span { display: none; }
   .subpage-header .main-nav { height: 44px; }
   .subpage-header .main-nav a { height: 44px; font-size: 12px; }
-  .search-panel { grid-template-columns: 1fr auto; padding: 16px; }
-  .search-panel label { display: none; }
-  .search-panel input { min-width: 0; }
   .breadcrumb { padding: 26px 18px 0; }
   .catalog-hero { padding: 64px 18px 38px; }
   .category-pills { margin-top: 34px; gap: 8px; }

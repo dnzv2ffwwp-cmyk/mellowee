@@ -92,7 +92,7 @@ button {
   top: 24px;
   right: 48px;
   display: grid;
-  grid-template-columns: repeat(4, 75px);
+  grid-template-columns: repeat(3, 75px);
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -149,39 +149,6 @@ button {
 .main-nav a:hover,
 .main-nav a:focus-visible {
   color: var(--mellowee-sage-800, #5c694e);
-}
-
-.search-panel {
-  position: absolute;
-  right: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: auto minmax(300px, 720px) auto;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  padding: 24px 48px;
-  border-bottom: 1px solid #e5e5e5;
-  background: rgb(255 255 255 / 96%);
-  box-shadow: 0 12px 24px rgb(0 0 0 / 6%);
-}
-
-.search-panel input {
-  height: 48px;
-  padding: 0 18px;
-  border: 1px solid #ccc;
-  border-radius: 24px;
-  font-size: 16px;
-}
-
-.search-panel button {
-  height: 48px;
-  padding: 0 28px;
-  border: 0;
-  border-radius: 24px;
-  color: #fff;
-  background: var(--mellowee-sage-500, #a1b889);
-  font-weight: 700;
 }
 
 .hero {
@@ -628,7 +595,7 @@ button {
 
 @media (max-width: 1450px) {
   .utility-menu {
-    grid-template-columns: repeat(4, 66px);
+    grid-template-columns: repeat(3, 66px);
   }
 
   .main-nav ul {

@@ -6,11 +6,12 @@ const logoMarkup = `
     <span>M</span><span>E</span><span>L</span><span>L</span><span>O</span><span>W</span><span>E</span><span>E</span>
   </span>`;
 
+const headerLogoMarkup = '<img src="./assets/mellowee-logo.svg" alt="MELLOWEE" />';
+
 const icon = (name) => {
   const icons = {
     signup: '<path d="M15 19a6 6 0 0 0-12 0"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/>',
     login: '<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/>',
-    search: '<circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/>',
     cart: '<path d="M3 4h2l2 11h10l2-7H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/>',
   };
   return `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icons[name]}</svg>`;
@@ -20,11 +21,10 @@ if (headerRoot) {
   headerRoot.outerHTML = `
     <header class="site-header subpage-header">
       <div class="header-top page-shell">
-        <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">${logoMarkup}</a>
+        <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">${headerLogoMarkup}</a>
         <ul class="utility-menu" aria-label="사용자 메뉴">
           <li><a href="./login.html#signup">${icon("signup")}<span>회원가입</span></a></li>
           <li><a href="./login.html">${icon("login")}<span>LOG IN</span></a></li>
-          <li><button type="button" data-common-search>${icon("search")}<span>SEARCH</span></button></li>
           <li><a href="./recently-viewed.html">${icon("cart")}<span>CART</span></a></li>
         </ul>
       </div>
@@ -41,11 +41,6 @@ if (headerRoot) {
           <li><a href="./index.html#instagram">EVENT</a></li>
         </ul>
       </nav>
-      <form class="search-panel page-shell" role="search" data-common-search-panel hidden>
-        <label for="common-search">상품 검색</label>
-        <input id="common-search" name="q" type="search" placeholder="찾고 싶은 상품을 입력해 주세요" />
-        <button type="submit">검색</button>
-      </form>
     </header>`;
 }
 
@@ -71,19 +66,3 @@ if (footerRoot) {
       <p class="copyright">© 2026 MELLOWY. ALL RIGHTS RESERVED.</p>
     </footer>`;
 }
-
-const commonSearchButton = document.querySelector("[data-common-search]");
-const commonSearchPanel = document.querySelector("[data-common-search-panel]");
-
-commonSearchButton?.addEventListener("click", () => {
-  const willOpen = commonSearchPanel.hidden;
-  commonSearchPanel.hidden = !willOpen;
-  commonSearchButton.setAttribute("aria-expanded", String(willOpen));
-  if (willOpen) commonSearchPanel.querySelector("input")?.focus();
-});
-
-commonSearchPanel?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const query = new FormData(commonSearchPanel).get("q") || commonSearchPanel.querySelector("input")?.value;
-  if (query) window.location.href = `./product-list.html?search=${encodeURIComponent(query)}`;
-});

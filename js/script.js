@@ -1,8 +1,6 @@
 const slides = [...document.querySelectorAll("[data-slide]")];
 const dots = [...document.querySelectorAll("[data-dot]")];
 const hero = document.querySelector(".hero");
-const searchButton = document.querySelector("[data-search-button]");
-const searchPanel = document.querySelector("[data-search-panel]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 let currentSlide = 0;
@@ -43,17 +41,6 @@ dots.forEach((dot) => {
 
 hero?.addEventListener("mouseenter", stopSlider);
 hero?.addEventListener("mouseleave", startSlider);
-
-searchButton?.addEventListener("click", () => {
-  const willOpen = searchPanel.hidden;
-  searchPanel.hidden = !willOpen;
-  searchButton.setAttribute("aria-expanded", String(willOpen));
-  if (willOpen) searchPanel.querySelector("input")?.focus();
-});
-
-searchPanel?.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
 
 document.querySelectorAll("img[data-fallback-src]").forEach((image) => {
   image.addEventListener(
