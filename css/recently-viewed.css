@@ -1,0 +1,96 @@
+/* recently viewed */
+.account-layout {
+  display: grid;
+  max-width: 1640px;
+  grid-template-columns: 220px 1fr;
+  gap: 80px;
+  margin: 0 auto;
+  padding: 80px 40px 130px;
+}
+
+.account-sidebar h2 { margin: 0 0 22px; font-size: 18px; }
+.account-sidebar h3 { margin: 44px 0 16px; font-size: 16px; }
+.account-sidebar a { display: block; margin: 0 0 15px; color: #666; font-size: 14px; }
+.account-sidebar a.is-active { color: #111; font-weight: 700; }
+.account-sidebar .ghost-button { margin-top: 22px; }
+
+.recent-list > h1 {
+  margin: 0;
+  padding-bottom: 22px;
+  border-bottom: 2px solid #222;
+  font-size: 22px;
+}
+
+.recent-item {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 34px;
+  padding: 38px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.recent-item__image {
+  display: grid;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: var(--mellowee-beige-050);
+  place-items: center;
+}
+
+.recent-item__image img { width: 100%; height: 100%; object-fit: contain; }
+
+.recent-item__content { position: relative; }
+.recent-item__content h2 { margin: 4px 0 8px; font-size: 19px; }
+.recent-item__price { margin: 0; line-height: 1.7; }
+.recent-item__price del { display: block; color: #999; }
+.recent-item__price strong { font-size: 17px; }
+.recent-item__point { margin: 5px 0; color: #999; font-size: 12px; }
+
+.recent-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #999;
+  font-size: 28px;
+}
+
+.recent-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px 0 8px;
+}
+
+.recent-actions .primary-button,
+.recent-actions .secondary-button { min-width: 136px; }
+
+.recent-options {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px 16px;
+  margin-top: 8px;
+  padding: 14px 18px;
+  background: #f7f7f7;
+}
+
+.recent-options label { align-self: center; color: #666; font-size: 13px; }
+.recent-options select { height: 43px; padding: 0 13px; border: 1px solid #ccc; background: #fff; }
+.recent-empty { padding: 90px 0; color: #777; text-align: center; }
+
+@media (max-width: 1199px) {
+  .account-layout { grid-template-columns: 180px 1fr; gap: 40px; }
+}
+
+@media (max-width: 767px) {
+  .account-layout { grid-template-columns: 1fr; padding: 45px 16px 80px; }
+  .account-sidebar { display: none; }
+  .recent-item { grid-template-columns: 110px 1fr; gap: 16px; }
+  .recent-item__content h2 { padding-right: 28px; font-size: 16px; }
+  .recent-actions { justify-content: stretch; }
+  .recent-actions .primary-button,
+  .recent-actions .secondary-button { min-width: 0; flex: 1; padding: 0 8px; }
+  .recent-options { grid-template-columns: 60px 1fr; padding: 12px; }
+}

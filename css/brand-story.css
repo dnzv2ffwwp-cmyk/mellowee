@@ -1,0 +1,51 @@
+/* brand story */
+.brand-story-page .breadcrumb { padding-bottom: 28px; }
+
+.brand-story-intro {
+  padding: 30px 30px 90px;
+  text-align: center;
+}
+
+.brand-story-intro h1 {
+  margin: 0;
+  color: var(--mellowee-sage-500);
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: 0.01em;
+}
+
+.brand-story-intro p {
+  margin: 25px 0 0;
+  color: #555;
+  line-height: 1.9;
+}
+
+.story-band img {
+  width: 100%;
+  height: clamp(420px, 41.666vw, 800px);
+  object-fit: cover;
+}
+
+.story-statement {
+  padding: 65px max(30px, calc((100vw - 1660px) / 2));
+}
+
+.story-statement h2 {
+  margin: 0 0 18px;
+  color: var(--mellowee-pink-500);
+  font-size: clamp(22px, 2vw, 34px);
+}
+
+.story-statement p {
+  max-width: 1180px;
+  margin: 0;
+  color: #555;
+  line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+  .brand-story-intro { padding: 45px 20px 58px; }
+  .brand-story-intro p br { display: none; }
+  .story-band img { height: 58vw; min-height: 300px; }
+  .story-statement { padding: 42px 20px; }
+}
