@@ -37,7 +37,7 @@ function productCard(product, best = false, position = 0) {
         <h3><a href="./product-detail.html">${product.name}</a></h3>
         ${best ? "" : '<button class="catalog-card__wish" type="button" aria-label="찜하기">♡</button>'}
         <p class="catalog-card__price"><del>${product.original}원</del><strong>${product.sale}원</strong></p>
-        ${best ? "" : '<p class="catalog-card__point">● 300원</p>'}
+        ${best ? "" : '<p class="catalog-card__point"><svg class="catalog-card__point-icon" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="4" fill="currentColor"></circle></svg>300원</p>'}
       </div>
     </article>`;
 }

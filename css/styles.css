@@ -118,7 +118,7 @@ button {
 
 .pill-button {
   color: #fff;
-  background: var(--mellowy-primary-500, #a1b889);
+  background: var(--mellowee-primary-500, #a1b889);
 }
 
 .pill-button--dark {
@@ -152,8 +152,8 @@ button {
 }
 
 .hero-controls button.is-active {
-  border-color: var(--mellowy-primary-700, #748463);
-  background: var(--mellowy-primary-700, #748463);
+  border-color: var(--mellowee-primary-700, #748463);
+  background: var(--mellowee-primary-700, #748463);
 }
 
 .section {
@@ -326,20 +326,20 @@ button {
   justify-content: center;
   flex-direction: column;
   padding: 32px 80px 32px 9vw;
-  border-top: 1px dashed var(--mellowy-primary-300, #cedac2);
-  border-bottom: 1px dashed var(--mellowy-primary-300, #cedac2);
+  border-top: 1px dashed var(--mellowee-primary-300, #cedac2);
+  border-bottom: 1px dashed var(--mellowee-primary-300, #cedac2);
 }
 
 .story-kicker {
   margin: 0;
-  color: var(--mellowy-primary-900, #444d3a);
+  color: var(--mellowee-primary-900, #444d3a);
   font-size: 20px;
   font-weight: 700;
 }
 
 .story-copy h2 {
   margin: 0 0 28px;
-  color: var(--mellowy-primary-500, #a1b889);
+  color: var(--mellowee-primary-500, #a1b889);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 39px;
   font-weight: 400;

@@ -63,7 +63,7 @@ body.subpage {
 }
 
 .page-heading--sage {
-  color: var(--mellowy-primary-500);
+  color: var(--mellowee-primary-500);
 }
 
 .page-subtitle {
@@ -80,7 +80,7 @@ body.subpage {
   align-items: center;
   justify-content: center;
   padding: 0 28px;
-  border: 1px solid var(--mellowy-primary-500);
+  border: 1px solid var(--mellowee-primary-500);
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
@@ -88,10 +88,10 @@ body.subpage {
 
 .primary-button {
   color: #fff;
-  background: var(--mellowy-primary-500);
+  background: var(--mellowee-primary-500);
 }
 
-.primary-button:hover { background: var(--mellowy-primary-600); }
+.primary-button:hover { background: var(--mellowee-primary-600); }
 
 .secondary-button {
   color: #222;

@@ -79,7 +79,7 @@
 
 .main-nav {
   height: 50px;
-  background: var(--mellowy-primary-100, #ecf1e7);
+  background: var(--mellowee-primary-100, #ecf1e7);
 }
 
 .main-nav ul {
@@ -105,7 +105,7 @@
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  color: var(--mellowy-main-pink);
+  color: var(--mellowee-main-pink);
 }
 
 @media (max-width: 1450px) {

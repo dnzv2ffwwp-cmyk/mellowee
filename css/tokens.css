@@ -68,58 +68,58 @@
   --lh-mo-detail: normal;
 
   /* Main colors */
-  --mellowy-main-green: #A1B889;
-  --mellowy-main-pink: #F3AAAC;
-  --mellowy-main-beige: #D7BA92;
+  --mellowee-main-green: #A1B889;
+  --mellowee-main-pink: #F3AAAC;
+  --mellowee-main-beige: #D7BA92;
 
   /* Primary — green */
-  --mellowy-primary-050: #F2F7EE;
-  --mellowy-primary-100: #E3EBDB;
-  --mellowy-primary-200: #D0DDC3;
-  --mellowy-primary-300: #BDCEAB;
-  --mellowy-primary-400: #AEC399;
-  --mellowy-primary-500: #A1B889;
-  --mellowy-primary-600: #8AA271;
-  --mellowy-primary-700: #73895C;
-  --mellowy-primary-800: #5E704B;
-  --mellowy-primary-900: #475538;
+  --mellowee-primary-050: #F2F7EE;
+  --mellowee-primary-100: #E3EBDB;
+  --mellowee-primary-200: #D0DDC3;
+  --mellowee-primary-300: #BDCEAB;
+  --mellowee-primary-400: #AEC399;
+  --mellowee-primary-500: #A1B889;
+  --mellowee-primary-600: #8AA271;
+  --mellowee-primary-700: #73895C;
+  --mellowee-primary-800: #5E704B;
+  --mellowee-primary-900: #475538;
 
   /* Black / neutral */
-  --mellowy-black-000: #FFFFFF;
-  --mellowy-black-050: #F5F5F5;
-  --mellowy-black-100: #E5E5E5;
-  --mellowy-black-200: #CCCCCC;
-  --mellowy-black-300: #B2B2B2;
-  --mellowy-black-400: #999999;
-  --mellowy-black-500: #7F7F7F;
-  --mellowy-black-600: #666666;
-  --mellowy-black-700: #4C4C4C;
-  --mellowy-black-800: #121212;
-  --mellowy-black-900: #000000;
+  --mellowee-black-000: #FFFFFF;
+  --mellowee-black-050: #F5F5F5;
+  --mellowee-black-100: #E5E5E5;
+  --mellowee-black-200: #CCCCCC;
+  --mellowee-black-300: #B2B2B2;
+  --mellowee-black-400: #999999;
+  --mellowee-black-500: #7F7F7F;
+  --mellowee-black-600: #666666;
+  --mellowee-black-700: #4C4C4C;
+  --mellowee-black-800: #121212;
+  --mellowee-black-900: #000000;
 
   /* Pink */
-  --mellowy-pink-050: #FEF8F8;
-  --mellowy-pink-100: #FDEEEE;
-  --mellowy-pink-200: #FBE1E2;
-  --mellowy-pink-300: #F9D5D6;
-  --mellowy-pink-400: #F6BFC1;
-  --mellowy-pink-500: #F3AAAC;
-  --mellowy-pink-600: #CF9192;
-  --mellowy-pink-700: #AA7778;
-  --mellowy-pink-800: #7A5556;
-  --mellowy-pink-900: #493334;
+  --mellowee-pink-050: #FEF8F8;
+  --mellowee-pink-100: #FDEEEE;
+  --mellowee-pink-200: #FBE1E2;
+  --mellowee-pink-300: #F9D5D6;
+  --mellowee-pink-400: #F6BFC1;
+  --mellowee-pink-500: #F3AAAC;
+  --mellowee-pink-600: #CF9192;
+  --mellowee-pink-700: #AA7778;
+  --mellowee-pink-800: #7A5556;
+  --mellowee-pink-900: #493334;
 
   /* Beige */
-  --mellowy-beige-050: #FCF9F6;
-  --mellowy-beige-100: #F7F1E9;
-  --mellowy-beige-200: #F1E7D9;
-  --mellowy-beige-300: #EBDDC9;
-  --mellowy-beige-400: #E1CBAD;
-  --mellowy-beige-500: #D7BA92;
-  --mellowy-beige-600: #B79E7C;
-  --mellowy-beige-700: #978266;
-  --mellowy-beige-800: #6C5D49;
-  --mellowy-beige-900: #41382C;
+  --mellowee-beige-050: #FCF9F6;
+  --mellowee-beige-100: #F7F1E9;
+  --mellowee-beige-200: #F1E7D9;
+  --mellowee-beige-300: #EBDDC9;
+  --mellowee-beige-400: #E1CBAD;
+  --mellowee-beige-500: #D7BA92;
+  --mellowee-beige-600: #B79E7C;
+  --mellowee-beige-700: #978266;
+  --mellowee-beige-800: #6C5D49;
+  --mellowee-beige-900: #41382C;
 
   /* Figma local color variables */
   --color-kakao: #FEE500;
