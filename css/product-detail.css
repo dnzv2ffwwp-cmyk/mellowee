@@ -72,7 +72,7 @@
 
 .purchase-row {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 120px minmax(0, 1fr);
   align-items: center;
   min-height: 70px;
   border-top: 1px solid #e5e5e5;
@@ -81,6 +81,7 @@
 
 .purchase-row select {
   width: 100%;
+  min-width: 0;
   height: 46px;
   padding: 0 14px;
   border: 1px solid #ddd;
@@ -89,8 +90,9 @@
 
 .quantity-control {
   display: inline-grid;
-  width: 260px;
-  grid-template-columns: 38px 1fr 38px;
+  width: min(100%, 220px);
+  min-width: 140px;
+  grid-template-columns: 38px minmax(0, 1fr) 38px;
   border: 1px solid #ddd;
 }
 
@@ -103,12 +105,18 @@
   text-align: center;
 }
 
+.quantity-control input {
+  width: 100%;
+  min-width: 0;
+}
+
 .quantity-control button { cursor: pointer; }
 
 .purchase-total {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 26px 0;
   border-top: 1px solid #222;
 }
@@ -117,8 +125,30 @@
 
 .purchase-buttons {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
   gap: 10px;
+}
+
+.purchase-buttons button {
+  width: 100%;
+  min-width: 0;
+}
+
+.purchase-buttons .primary-button {
+  color: #fff;
+  background: var(--mellowee-sage-500, #a1b889);
+  border-color: var(--mellowee-sage-500, #a1b889);
+}
+
+.purchase-buttons .primary-button:hover {
+  background: var(--mellowee-sage-600, #8fa56f);
+  border-color: var(--mellowee-sage-600, #8fa56f);
+}
+
+.purchase-buttons .secondary-button {
+  color: #222;
+  background: #fff;
+  border-color: #d8d8d8;
 }
 
 .detail-tabs {
@@ -248,6 +278,9 @@
   .product-main-image { height: 500px; }
   .product-purchase h1 { font-size: 22px; }
   .purchase-row { grid-template-columns: 90px 1fr; }
+  .quantity-control { width: 100%; max-width: 200px; }
+  .purchase-total { flex-direction: column; align-items: flex-start; }
+  .purchase-buttons { grid-template-columns: 1fr; }
   .detail-tabs button { height: 50px; font-size: 12px; }
   .detail-visual { margin-top: 24px; padding: 50px 18px; }
   .detail-visual__intro h2 { font-size: 31px; }

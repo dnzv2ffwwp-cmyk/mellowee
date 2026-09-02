@@ -63,7 +63,7 @@ body.subpage {
 }
 
 .page-heading--sage {
-  color: var(--mellowee-sage-500);
+  color: var(--mellowy-primary-500);
 }
 
 .page-subtitle {
@@ -88,7 +88,7 @@ body.subpage {
 
 .primary-button {
   color: #fff;
-  background: var(--mellowee-sage-500);
+  background: var(--mellowy-primary-500);
 }
 
 .primary-button:hover { background: var(--mellowee-sage-600); }
