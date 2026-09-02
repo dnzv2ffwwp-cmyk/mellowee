@@ -1,51 +1,303 @@
-/* brand story */
-.brand-story-page .breadcrumb { padding-bottom: 28px; }
+.brand-story {
+  width: 100%;
+  overflow: hidden;
+}
 
-.brand-story-intro {
-  padding: 30px 30px 90px;
+.page-shell {
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1824px;
+  margin-inline: auto;
+}
+
+.section-shell {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.story-heading {
+  padding: clamp(56px, 5vw, 96px) var(--page-gutter) clamp(50px, 4.1vw, 78px);
   text-align: center;
 }
 
-.brand-story-intro h1 {
-  margin: 0;
-  color: var(--mellowee-sage-500);
-  font-family: "Arial Rounded MT Bold", sans-serif;
-  font-size: clamp(34px, 4vw, 56px);
-  letter-spacing: 0.01em;
+.story-heading h1 {
+  color: var(--green-500);
+  font-family: "Comic Sans MS", "Pretendard", cursive;
+  font-size: clamp(38px, 3.35vw, 64px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
 }
 
-.brand-story-intro p {
-  margin: 25px 0 0;
-  color: #555;
-  line-height: 1.9;
+.story-heading p {
+  margin-top: clamp(24px, 2.2vw, 42px);
+  color: var(--black-700);
+  font-size: clamp(13px, 1.05vw, 20px);
+  line-height: 1.55;
 }
 
-.story-band img {
-  width: 100%;
-  height: clamp(420px, 41.666vw, 800px);
-  object-fit: cover;
+.hero-media {
+  aspect-ratio: 1824 / 800;
+  overflow: hidden;
 }
 
-.story-statement {
-  padding: 65px max(30px, calc((100vw - 1660px) / 2));
+.our-story {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 400px)) minmax(320px, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding-top: 32px;
 }
 
-.story-statement h2 {
-  margin: 0 0 18px;
-  color: var(--mellowee-pink-500);
-  font-size: clamp(22px, 2vw, 34px);
+.story-photo {
+  aspect-ratio: 400 / 620;
+  overflow: hidden;
 }
 
-.story-statement p {
-  max-width: 1180px;
-  margin: 0;
-  color: #555;
-  line-height: 1.75;
+.story-copy {
+  padding: 0 clamp(24px, 3vw, 56px);
+  text-align: center;
+}
+
+.story-copy h2,
+.section-title h2 {
+  font-size: clamp(26px, 2.05vw, 39px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.story-copy p,
+.section-title p {
+  color: var(--black-700);
+  font-size: clamp(12px, 0.84vw, 16px);
+  line-height: 1.5;
+}
+
+.story-copy .story-lead {
+  margin-top: 18px;
+  color: var(--black-900);
+}
+
+.story-copy p:last-child {
+  margin-top: 14px;
+}
+
+.principles {
+  padding: var(--section-gap) var(--page-gutter) 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.wordmark {
+  display: inline-flex;
+  font-size: clamp(20px, 1.5vw, 29px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+
+.wordmark span:nth-child(3n + 1) { color: #a1b889; }
+.wordmark span:nth-child(3n + 2) { color: #f3aaac; }
+.wordmark span:nth-child(3n) { color: #d7ba92; }
+
+.principle-list {
+  display: grid;
+  justify-content: center;
+  gap: clamp(80px, 8vw, 150px);
+  margin-top: clamp(72px, 6vw, 116px);
+}
+
+.principle-card {
+  width: min(100%, 500px);
+  text-align: center;
+}
+
+.principle-card img {
+  aspect-ratio: 4 / 5;
+}
+
+.principle-card h3 {
+  margin-top: 46px;
+  color: var(--green-700);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.principle-card p {
+  margin-top: 16px;
+  color: var(--black-700);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.philosophy {
+  padding: var(--section-gap) clamp(24px, 8.45vw, 162px) 0;
+}
+
+.philosophy .section-title p,
+.everyday .section-title p {
+  margin-top: 16px;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 500px));
+  justify-content: center;
+  gap: clamp(24px, 2.5vw, 48px);
+  margin-top: clamp(70px, 6vw, 112px);
+}
+
+.philosophy-card {
+  min-width: 0;
+  text-align: center;
+}
+
+.philosophy-card > img {
+  aspect-ratio: 4 / 5;
+}
+
+.philosophy-pill {
+  width: min(100%, 330px);
+  min-height: 88px;
+  margin: 42px auto 0;
+  padding: 18px 24px;
+  border-radius: 999px;
+  background: var(--pink-050);
+}
+
+.philosophy-pill h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.philosophy-pill p {
+  margin-top: 8px;
+  color: var(--black-700);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.everyday {
+  padding-top: var(--section-gap);
+  padding-bottom: clamp(110px, 9vw, 174px);
+}
+
+.everyday .section-title {
+  padding-inline: var(--page-gutter);
+}
+
+.everyday-media {
+  aspect-ratio: 1824 / 842;
+  margin-top: clamp(48px, 4vw, 74px);
+  overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+  .our-story {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .story-copy {
+    grid-column: 1 / -1;
+    padding: 48px 24px 8px;
+  }
+
+  .principle-card {
+    width: min(48vw, 500px);
+  }
 }
 
 @media (max-width: 767px) {
-  .brand-story-intro { padding: 45px 20px 58px; }
-  .brand-story-intro p br { display: none; }
-  .story-band img { height: 58vw; min-height: 300px; }
-  .story-statement { padding: 42px 20px; }
+  :root {
+    --page-gutter: 16px;
+    --section-gap: 88px;
+  }
+
+  .story-heading {
+    padding-top: 48px;
+  }
+
+  .story-heading p br {
+    display: none;
+  }
+
+  .hero-media {
+    aspect-ratio: 16 / 10;
+  }
+
+  .our-story {
+    gap: 8px;
+    padding-top: 16px;
+  }
+
+  .story-photo {
+    aspect-ratio: 3 / 4;
+  }
+
+  .story-copy {
+    padding: 36px 10px 0;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .principle-list {
+    gap: 72px;
+    margin-top: 54px;
+  }
+
+  .principle-card {
+    width: min(78vw, 500px);
+  }
+
+  .principle-card h3 {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+
+  .principle-card p {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .philosophy {
+    padding-inline: var(--page-gutter);
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin-top: 52px;
+  }
+
+  .philosophy-card {
+    width: min(82vw, 500px);
+    margin-inline: auto;
+  }
+
+  .philosophy-pill {
+    margin-top: 22px;
+  }
+
+  .everyday-media {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

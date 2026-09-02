@@ -32,7 +32,7 @@
   aspect-ratio: 1;
 }
 
-.product-thumbs button.is-active { border: 2px solid var(--mellowee-sage-500); }
+.product-thumbs button.is-active { border: 2px solid var(--mellowy-primary-500); }
 
 .product-thumbs img,
 .product-main-image img {
@@ -136,13 +136,13 @@
 
 .purchase-buttons .primary-button {
   color: #fff;
-  background: var(--mellowee-sage-500, #a1b889);
-  border-color: var(--mellowee-sage-500, #a1b889);
+  background: var(--mellowy-primary-500, #a1b889);
+  border-color: var(--mellowy-primary-500, #a1b889);
 }
 
 .purchase-buttons .primary-button:hover {
-  background: var(--mellowee-sage-600, #8fa56f);
-  border-color: var(--mellowee-sage-600, #8fa56f);
+  background: var(--mellowy-primary-600, #8fa56f);
+  border-color: var(--mellowy-primary-600, #8fa56f);
 }
 
 .purchase-buttons .secondary-button {
