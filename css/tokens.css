@@ -27,13 +27,7 @@
   --fs-pc-body1: 16px;
   --fs-pc-body2: 13px;
   --fs-pc-detail: 10px;
-  --lh-pc-h1: normal;
-  --lh-pc-h2: normal;
-  --lh-pc-h3: 1.4;
-  --lh-pc-h4: 1.4;
-  --lh-pc-body1: 1.4;
-  --lh-pc-body2: 1.4;
-  --lh-pc-detail: 1.4;
+
 
   /* Pad text styles */
   --fs-pad-h1: 34px;
@@ -43,13 +37,6 @@
   --fs-pad-body1: 14px;
   --fs-pad-body2: 11px;
   --fs-pad-detail: 9px;
-  --lh-pad-h1: normal;
-  --lh-pad-h2: normal;
-  --lh-pad-h3: normal;
-  --lh-pad-h4: normal;
-  --lh-pad-body1: normal;
-  --lh-pad-body2: normal;
-  --lh-pad-detail: normal;
 
   /* Mobile text styles */
   --fs-mo-h1: 19px;
@@ -59,13 +46,7 @@
   --fs-mo-body1: 12px;
   --fs-mo-body2: 11px;
   --fs-mo-detail: 9px;
-  --lh-mo-h1: normal;
-  --lh-mo-h2: normal;
-  --lh-mo-h3: normal;
-  --lh-mo-h4: normal;
-  --lh-mo-body1: normal;
-  --lh-mo-body2: normal;
-  --lh-mo-detail: normal;
+
 
   /* Main colors */
   --mellowee-main-green: #A1B889;

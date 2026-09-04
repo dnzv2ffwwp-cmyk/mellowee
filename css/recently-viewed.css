@@ -1,32 +1,33 @@
 /* recently viewed */
 .account-layout {
   display: grid;
-  max-width: 1640px;
-  grid-template-columns: 220px 1fr;
-  gap: 80px;
+  max-width: 102.5rem;
+  grid-template-columns: 13.75rem 1fr;
+  gap: 5rem;
   margin: 0 auto;
-  padding: 80px 40px 130px;
+  padding: 0 2.5rem 8.125rem;
 }
-
-.account-sidebar h2 { margin: 0 0 22px; font-size: 18px; }
-.account-sidebar h3 { margin: 44px 0 16px; font-size: 16px; }
-.account-sidebar a { display: block; margin: 0 0 15px; color: #666; font-size: 14px; }
-.account-sidebar a.is-active { color: #111; font-weight: 700; }
-.account-sidebar .ghost-button { margin-top: 22px; }
+.account-sidebar{ padding-left: 1rem; padding-right: 1rem;}
+.account-sidebar h2 { margin: 0 0 1rem; font-size: var(--fs-pc-body1); font-weight: var( --fw-bold); }
+.account-sidebar h3 { margin: 3rem 0 1rem; font-size: var(--fs-pc-body1); font-weight: var( --fw-bold); }
+.account-sidebar a { display: block; margin: 0 0 1rem; color: var(--mellowee-black-600); font-size: var(--fs-pc-body2); }
+.account-sidebar a.is-active { color: var(--mellowee-black-900); font-weight: var(--fw-bold); }
+.account-sidebar .ghost-button { margin-top: 1rem; }
 
 .recent-list > h1 {
   margin: 0;
-  padding-bottom: 22px;
-  border-bottom: 2px solid #222;
-  font-size: 22px;
+  padding-bottom: 1rem;
+  border-bottom: 0.125rem solid var(--mellowee-black-900);
+  font-size: var(--fs-pc-h4);
+  font-weight: var(--fw-bold);
 }
 
 .recent-item {
   display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 34px;
-  padding: 38px 0;
-  border-bottom: 1px solid #eee;
+  grid-template-columns: 13rem 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 0.05rem solid var(--mellowee-black-100);
 }
 
 .recent-item__image {
@@ -40,11 +41,26 @@
 .recent-item__image img { width: 100%; height: 100%; object-fit: contain; }
 
 .recent-item__content { position: relative; }
-.recent-item__content h2 { margin: 4px 0 8px; font-size: 19px; }
-.recent-item__price { margin: 0; line-height: 1.7; }
-.recent-item__price del { display: block; color: #999; }
-.recent-item__price strong { font-size: 17px; }
-.recent-item__point { margin: 5px 0; color: #999; font-size: 12px; }
+.recent-item__content h2 { margin: 0.5rem 0 0.5rem; font-size: var(--fs-pc-h4); }
+.recent-item__price {
+  display: block;
+  margin: 0;
+  /* line-height: 1.7; */
+}
+
+.recent-item__price ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recent-item__price li { list-style: none; }
+.recent-item__price del { display: block; color: var(--mellowee-black-400); }
+.recent-item__price strong { font-size: var(--fs-pc-body1); }
+.recent-item__point { margin: 0.25rem 0; color: var(--mellowee-black-400); font-size: var(--fs-pc-body1); }
 
 .recent-delete {
   position: absolute;
@@ -53,44 +69,46 @@
   border: 0;
   background: transparent;
   cursor: pointer;
-  color: #999;
-  font-size: 28px;
+  color: var(--mellowee-black-400);
+  /* 닫기 버튼 사이즈 조절 해야함 */
+  font-size: 1.75rem;
+
 }
 
 .recent-actions {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
-  margin: 10px 0 8px;
+  gap: 1rem;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .recent-actions .primary-button,
-.recent-actions .secondary-button { min-width: 136px; }
+.recent-actions .secondary-button { min-width: 8.5rem; }
 
 .recent-options {
   display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 10px 16px;
-  margin-top: 8px;
-  padding: 14px 18px;
-  background: #f7f7f7;
+  grid-template-columns: 5rem 1fr;
+  gap: 0.625rem 1rem;
+  margin-top: 0.5rem;
+  padding: 1rem 1.125rem;
+  background: var(--mellowee-black-050);
 }
 
-.recent-options label { align-self: center; color: #666; font-size: 13px; }
-.recent-options select { height: 43px; padding: 0 13px; border: 1px solid #ccc; background: #fff; }
-.recent-empty { padding: 90px 0; color: #777; text-align: center; }
+.recent-options label { align-self: center; color: var(--mellowee-black-600); font-size: var(--fs-pc-body2); }
+.recent-options select { height: 2.6875rem; padding: 0 0.8125rem; border: 0.0625rem solid var(--mellowee-black-200); background: var(--mellowee-black-000); }
+.recent-empty { padding: 5.625rem 0; color: var(--mellowee-black-500); text-align: center; }
 
-@media (max-width: 1199px) {
-  .account-layout { grid-template-columns: 180px 1fr; gap: 40px; }
+@media (max-width: 74.9375rem) {
+  .account-layout { grid-template-columns: 11.25rem 1fr; gap: 2.5rem; }
 }
 
-@media (max-width: 767px) {
-  .account-layout { grid-template-columns: 1fr; padding: 45px 16px 80px; }
+@media (max-width: 47.1875rem) {
+  .account-layout { grid-template-columns: 1fr; padding: 2.8125rem 1rem 5rem; }
   .account-sidebar { display: none; }
-  .recent-item { grid-template-columns: 110px 1fr; gap: 16px; }
-  .recent-item__content h2 { padding-right: 28px; font-size: 16px; }
+  .recent-item { grid-template-columns: 6.875rem 1fr; gap: 1rem; }
+  .recent-item__content h2 { padding-right: 1.75rem; font-size: var(--fs-pc-body1); }
   .recent-actions { justify-content: stretch; }
   .recent-actions .primary-button,
-  .recent-actions .secondary-button { min-width: 0; flex: 1; padding: 0 8px; }
-  .recent-options { grid-template-columns: 60px 1fr; padding: 12px; }
+  .recent-actions .secondary-button { min-width: 0; flex: 1; padding: 0 0.5rem; }
+  .recent-options { grid-template-columns: 3.75rem 1fr; padding: 0.75rem; }
 }
