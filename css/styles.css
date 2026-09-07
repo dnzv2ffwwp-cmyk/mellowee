@@ -207,12 +207,19 @@ button {
 }
 
 .new-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.new-gallery-track {
+  display: flex;
+  width: max-content;
   gap: 2rem;
+  animation: new-gallery-slide 18s linear infinite;
 }
 
 .new-card {
+  flex: 0 0 clamp(16rem, 23vw, 25.625rem);
+  width: clamp(16rem, 23vw, 25.625rem);
   height: 36.875rem;
   margin: 0;
   overflow: hidden;
@@ -224,6 +231,16 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes new-gallery-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .best {
@@ -333,7 +350,7 @@ button {
 
 .story-kicker {
   margin: 0;
-  color: var(--mellowee-primary-900, #444d3a);
+  color: var(--mellowee-primary-800, #444d3a);
   font-size: var(--fs-pc-h4);
   font-weight: var(--fw-bold);
 }
@@ -403,6 +420,7 @@ button {
   object-fit: cover;
 }
 
+/* Tablet ~ Laptop: 90.625rem (1450px) 이하 */
 @media (max-width: 90.625rem) {
   .hero-copy {
     left: 6vw;
@@ -423,6 +441,7 @@ button {
   }
 }
 
+/* Pad: 64rem (1024px) 이하 */
 @media (max-width: 64rem) {
   .hero {
     height: 38.75rem;
@@ -448,12 +467,18 @@ button {
     gap: 1.75rem;
   }
 
-  .new-gallery,
-  .instagram-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .new-gallery-track {
+    gap: 1.5rem;
+  }
+
+  .instagram-grid,
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .new-card {
+    flex-basis: clamp(14rem, 38vw, 22rem);
+    width: clamp(14rem, 38vw, 22rem);
     height: 27.5rem;
   }
 
@@ -469,12 +494,17 @@ button {
   .story-copy h2 {
     font-size: var(--fs-pc-h2);
   }
+}
 
+/* Mobile: 25.125rem (402px) 이하 */
+@media (max-width: 25.125rem) {
+  .instagram-grid,
   .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 
+/* Mobile: 42.5rem (680px) 이하 */
 @media (max-width: 42.5rem) {
   .hero {
     height: 32.5rem;
@@ -531,14 +561,37 @@ button {
     font-size: var(--fs-pc-body1);
   }
 
-  .new-gallery,
   .instagram-grid,
   .product-grid,
   .footer-links {
     grid-template-columns: 1fr;
   }
 
-  .new-card,
+  .mobile-carousel {
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.45s ease;
+  }
+
+  .mobile-carousel > * {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .new-gallery-track {
+    gap: 1rem;
+  }
+
+  .new-card {
+    flex-basis: min(18rem, 78vw);
+    width: min(18rem, 78vw);
+    height: 22.5rem;
+  }
+
   .lookbook-image {
     height: 22.5rem;
   }
