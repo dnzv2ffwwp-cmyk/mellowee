@@ -130,7 +130,18 @@
   /* External library paint styles used on node 38:615 */
   --color-main-khaki-000: #FFFFFF;
   --color-main-khaki-500: #5F7F56;
-}
+
+  /* Legacy aliases and layout tokens for older page-specific CSS
+     (keeps existing brand-story.css working without large refactor) */
+  --green-500: var(--mellowee-primary-500);
+  --black-700: var(--mellowee-black-700);
+  --pink-050: var(--mellowee-pink-050);
+
+  /* page spacing defaults (can be adjusted project-wide) */
+  --page-gutter: 48px;
+  --section-gap: 120px;
+  /* Set global base font to the PC token so styles.css uses consistent family */
+  --font-family-base: var(--font-pc);
 
 /* Shared Figma text-style properties */
 [class^="text-pc-"],
@@ -401,4 +412,18 @@
   .text-body1 { font-size: var(--fs-mo-body1); line-height: var(--lh-mo-body1); }
   .text-body2 { font-size: var(--fs-mo-body2); line-height: var(--lh-mo-body2); }
   .text-detail { font-size: var(--fs-mo-detail); line-height: var(--lh-mo-detail); }
+}
+
+@font-face {
+  font-family: "Mabook";
+  src: url("../fonts/Mabook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.point-title {
+  font-family: "Mabook", cursive;
+  font-size: 48px;
+  font-weight: 400;
 }
