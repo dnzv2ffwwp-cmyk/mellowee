@@ -248,10 +248,20 @@ button {
   padding-bottom: 5.375rem;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+.product-swiper {
+  width: 100%;
+}
+
+.product-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.product-swiper .swiper-slide {
+  height: auto;
+}
+
+.product-card {
+  min-width: 0;
 }
 
 .product-thumb {
@@ -375,26 +385,32 @@ button {
   padding-bottom: 6.25rem;
 }
 
-.instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+.instagram-swiper {
+  width: 100%;
 }
 
-.instagram-grid a {
+.instagram-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.instagram-swiper .swiper-slide {
+  height: auto;
+}
+
+.instagram-card {
   display: block;
   overflow: hidden;
   aspect-ratio: 1;
 }
 
-.instagram-grid img {
+.instagram-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.instagram-grid a:hover img {
+.instagram-card:hover img {
   transform: scale(1.025);
 }
 
@@ -474,6 +490,10 @@ button {
   .instagram-grid,
   .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .instagram-swiper {
+    overflow: hidden;
   }
 
   .new-card {
@@ -562,24 +582,12 @@ button {
   }
 
   .instagram-grid,
-  .product-grid,
   .footer-links {
     grid-template-columns: 1fr;
   }
 
-  .mobile-carousel {
-    display: flex;
-    gap: 0;
+  .instagram-swiper {
     overflow: hidden;
-    width: 100%;
-    transition: transform 0.45s ease;
-  }
-
-  .mobile-carousel > * {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
   }
 
   .new-gallery-track {
