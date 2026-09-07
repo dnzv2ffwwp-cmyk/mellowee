@@ -470,7 +470,7 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-pad-h2);
   }
 
   .section {
@@ -512,7 +512,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-pad-h2);
   }
 }
 
@@ -545,18 +545,18 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-mo-h4);
   }
 
   .hero-copy h1,
   .hero-copy h2 {
     margin-bottom: 1rem;
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-mo-body1);
   }
 
   .hero-copy > p:not(.eyebrow) {
     margin-bottom: 1.125rem;
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-mo-body2);
   }
 
   .pill-button,
@@ -564,7 +564,7 @@ button {
     min-width: 0;
     width: auto;
     padding: 0.75rem 1.125rem;
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-mo-body2);
   }
 
   .section {
@@ -573,12 +573,12 @@ button {
 
   .section-title,
   .section-kicker {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-mo-h2);
   }
 
   .section-intro > p:not(.section-kicker) {
     margin: 1.5rem 0 2rem;
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-mo-body1);
   }
 
   .instagram-grid,
@@ -613,7 +613,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-mo-h4);
   }
 
   .lookbook {
