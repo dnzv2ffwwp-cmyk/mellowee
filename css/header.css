@@ -49,7 +49,7 @@
   top: 24px;
   right: 48px;
   display: grid;
-  grid-template-columns: repeat(3, 75px);
+  grid-template-columns: repeat(4, 75px);
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -134,7 +134,7 @@
 
   .utility-menu {
     right: 24px;
-    grid-template-columns: repeat(3, 58px);
+    grid-template-columns: repeat(4, 58px);
   }
 
   .utility-menu a,
@@ -179,7 +179,7 @@
   .utility-menu {
     top: 18px;
     right: 14px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4px;
   }
 
