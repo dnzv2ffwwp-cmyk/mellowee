@@ -139,7 +139,7 @@
   --section-gap: 120px;
   /* Set global base font to the PC token so styles.css uses consistent family */
   --font-family-base: var(--font-pc);
-
+}
   /* Shared Figma text-style properties */
   [class^="text-pc-"],
   [class*=" text-pc-"] {
