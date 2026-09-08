@@ -81,7 +81,7 @@
 
 .product-purchase h1 {
   margin: 0 0 0.5rem;
-  font-size: var(--fs-pc-h2);
+  font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   
 }
@@ -138,12 +138,12 @@
 }
 
 .detail-price strong {
-  font-size: var(--fs-pc-h2);  
+  font-size: var(--fs-h2);  
 }
 
 .detail-price__discount {
   color: var(--mellowee-beige-600);
-  font-size: var(--fs-pc-h4);
+  font-size: var(--fs-h4);
   font-weight: var(--fw-bold);  
 }
 
@@ -181,7 +181,7 @@
   border: 0;
   background: transparent;
   color: var(--mellowee-beige-900);
-  font-size: var(--fs-pc-h3);
+  font-size: var(--fs-h3);
   cursor: pointer;
 }
 
@@ -221,7 +221,7 @@
 .selected-product__name {
   margin: 0;
   color: var(--mellowee-black-600);
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
 }
 
 .selected-product__controls {
@@ -253,7 +253,7 @@
   width: 100%;
   min-width: 0;
   appearance: textfield;
-  font-size: var(--fs-pc-body2); 
+  font-size: var(--fs-body2); 
 }
 
 .quantity-control input::-webkit-outer-spin-button,
@@ -271,7 +271,7 @@
   border: 0;
   background: transparent;
   color: var(--mellowee-black-200);
-  font-size: var(--fs-pc-h3);
+  font-size: var(--fs-h3);
   cursor: pointer;  
 }
 
@@ -304,7 +304,7 @@
 }
 
 .purchase-total strong {
-  font-size: var(--fs-pc-h2);
+  font-size: var(--fs-h2);
   line-height: 1;
   letter-spacing: -0.04em;  
 }
@@ -314,7 +314,7 @@
 
 .purchase-total small {
   color: var(--mellowee-black-400);
-  font-size: var(--fs-pc-body2);
+  font-size: var(--fs-body2);
 }
 
 .purchase-buttons {
@@ -466,7 +466,7 @@
 .board-panel h2 {
   text-align: center;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-pc-h2);
+  font-size: var(--fs-h2);
 }
 .delivery-info {
   color: var(--mellowee-black-600);
