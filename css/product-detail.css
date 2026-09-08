@@ -118,8 +118,7 @@
 .product-purchase__icon svg {
   width: 2rem;
   height: 2rem;
-  stroke: currentColor;
-  
+  stroke: currentColor;  
 }
 
 .detail-price {
@@ -158,7 +157,6 @@
   align-items: center;
   min-height: 6rem;
   border-bottom: 1px solid var(--mellowee-black-100);
-  
 }
 
 .purchase-row > span:first-child,
