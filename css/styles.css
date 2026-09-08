@@ -15,7 +15,7 @@ body {
   color: var(--mellowee-black-800);
   background: var(--mellowee-black-000);
   font-family: var(--font-family-base, "Pretendard", sans-serif);
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
   line-height: 1.4;
 }
 
@@ -82,7 +82,7 @@ button {
 .hero-copy .eyebrow {
   margin: 0 0 0.25rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: var(--fs-pc-h1);
+  font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   letter-spacing: -0.02em;
 }
@@ -91,7 +91,7 @@ button {
 .hero-copy h2 {
   margin: 0 0 2rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: var(--fs-pc-h3);
+  font-size: var(--fs-h3);
   font-style: italic;
   font-weight: var(--fw-regular);
 }
@@ -99,7 +99,7 @@ button {
 .hero-copy > p:not(.eyebrow) {
   margin: 0 0 2.75rem;
   color: var(--mellowee-beige-800);
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
   line-height: 1.65;
 }
 
@@ -112,7 +112,7 @@ button {
   min-height: 3.25rem;
   padding: 0.875rem 2rem;
   border-radius: 5rem;
-  font-size: var(--fs-pc-body2);
+  font-size: var(--fs-body2);
   font-weight: var(--fw-bold);
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -164,7 +164,7 @@ button {
 .section-title,
 .section-kicker {
   margin: 0;
-  font-size: var(--fs-pc-h1);
+  font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   letter-spacing: -0.02em;
 }
@@ -184,7 +184,7 @@ button {
 .section-intro > p:not(.section-kicker) {
   margin: 2.5rem 0 3.5rem;
   color: var(--mellowee-black-600);
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
   line-height: 1.65;
 }
 
@@ -294,7 +294,7 @@ button {
   border: 0.0625rem solid var(--mellowee-beige-800);
   border-radius: 6.25rem;
   background: var(--mellowee-beige-300);
-  font-size: var(--fs-pc-body2);
+  font-size: var(--fs-body2);
   place-items: center;
 }
 
@@ -309,7 +309,7 @@ button {
 
 .product-info h3 {
   overflow: hidden;
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
   font-weight: var(--fw-regular);
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -318,13 +318,13 @@ button {
 .product-size {
   margin-top: 0.5rem !important;
   color: var(--mellowee-black-400);
-  font-size: var(--fs-pc-body2);
+  font-size: var(--fs-body2);
 }
 
 .product-info strong {
   display: block;
   margin-top: 1rem;
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
 }
 
 .story {
@@ -361,7 +361,7 @@ button {
 .story-kicker {
   margin: 0;
   color: var(--mellowee-primary-800, #444d3a);
-  font-size: var(--fs-pc-h4);
+  font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
 }
 
@@ -369,7 +369,7 @@ button {
   margin: 0 0 1.75rem;
   color: var(--mellowee-primary-500, #a1b889);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: var(--fs-pc-h1);
+  font-size: var(--fs-h1);
   font-weight: var(--fw-regular);
   letter-spacing: -0.02em;
 }
@@ -470,7 +470,7 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-pad-h2);
+    font-size: var(--fs-h2);
   }
 
   .section {
@@ -512,7 +512,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-pad-h2);
+    font-size: var(--fs-h2);
   }
 }
 
@@ -545,18 +545,18 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-mo-h4);
+    font-size: var(--fs-h4);
   }
 
   .hero-copy h1,
   .hero-copy h2 {
     margin-bottom: 1rem;
-    font-size: var(--fs-mo-body1);
+    font-size: var(--fs-body1);
   }
 
   .hero-copy > p:not(.eyebrow) {
     margin-bottom: 1.125rem;
-    font-size: var(--fs-mo-body2);
+    font-size: var(--fs-body2);
   }
 
   .pill-button,
@@ -564,7 +564,7 @@ button {
     min-width: 0;
     width: auto;
     padding: 0.75rem 1.125rem;
-    font-size: var(--fs-mo-body2);
+    font-size: var(--fs-body2);
   }
 
   .section {
@@ -573,12 +573,12 @@ button {
 
   .section-title,
   .section-kicker {
-    font-size: var(--fs-mo-h2);
+    font-size: var(--fs-h2);
   }
 
   .section-intro > p:not(.section-kicker) {
     margin: 1.5rem 0 2rem;
-    font-size: var(--fs-mo-body1);
+    font-size: var(--fs-body1);
   }
 
   .instagram-grid,
@@ -613,7 +613,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-mo-h4);
+    font-size: var(--fs-h4);
   }
 
   .lookbook {
