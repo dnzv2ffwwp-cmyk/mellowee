@@ -207,12 +207,19 @@ button {
 }
 
 .new-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.new-gallery-track {
+  display: flex;
+  width: max-content;
   gap: 2rem;
+  animation: new-gallery-slide 18s linear infinite;
 }
 
 .new-card {
+  flex: 0 0 clamp(16rem, 23vw, 25.625rem);
+  width: clamp(16rem, 23vw, 25.625rem);
   height: 36.875rem;
   margin: 0;
   overflow: hidden;
@@ -226,15 +233,35 @@ button {
   object-fit: cover;
 }
 
+@keyframes new-gallery-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .best {
   padding-top: 3.125rem;
   padding-bottom: 5.375rem;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+.product-swiper {
+  width: 100%;
+}
+
+.product-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.product-swiper .swiper-slide {
+  height: auto;
+}
+
+.product-card {
+  min-width: 0;
 }
 
 .product-thumb {
@@ -333,7 +360,7 @@ button {
 
 .story-kicker {
   margin: 0;
-  color: var(--mellowee-primary-900, #444d3a);
+  color: var(--mellowee-primary-800, #444d3a);
   font-size: var(--fs-pc-h4);
   font-weight: var(--fw-bold);
 }
@@ -358,26 +385,32 @@ button {
   padding-bottom: 6.25rem;
 }
 
-.instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+.instagram-swiper {
+  width: 100%;
 }
 
-.instagram-grid a {
+.instagram-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.instagram-swiper .swiper-slide {
+  height: auto;
+}
+
+.instagram-card {
   display: block;
   overflow: hidden;
   aspect-ratio: 1;
 }
 
-.instagram-grid img {
+.instagram-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.instagram-grid a:hover img {
+.instagram-card:hover img {
   transform: scale(1.025);
 }
 
@@ -403,6 +436,7 @@ button {
   object-fit: cover;
 }
 
+/* Tablet ~ Laptop: 90.625rem (1450px) 이하 */
 @media (max-width: 90.625rem) {
   .hero-copy {
     left: 6vw;
@@ -423,6 +457,7 @@ button {
   }
 }
 
+/* Pad: 64rem (1024px) 이하 */
 @media (max-width: 64rem) {
   .hero {
     height: 38.75rem;
@@ -435,7 +470,7 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-pad-h2);
   }
 
   .section {
@@ -448,12 +483,22 @@ button {
     gap: 1.75rem;
   }
 
-  .new-gallery,
-  .instagram-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .new-gallery-track {
+    gap: 1.5rem;
+  }
+
+  .instagram-grid,
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .instagram-swiper {
+    overflow: hidden;
   }
 
   .new-card {
+    flex-basis: clamp(14rem, 38vw, 22rem);
+    width: clamp(14rem, 38vw, 22rem);
     height: 27.5rem;
   }
 
@@ -467,14 +512,19 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-pc-h2);
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: var(--fs-pad-h2);
   }
 }
 
+/* Mobile: 25.125rem (402px) 이하 */
+@media (max-width: 25.125rem) {
+  .instagram-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile: 42.5rem (680px) 이하 */
 @media (max-width: 42.5rem) {
   .hero {
     height: 32.5rem;
@@ -495,18 +545,18 @@ button {
   }
 
   .hero-copy .eyebrow {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-mo-h4);
   }
 
   .hero-copy h1,
   .hero-copy h2 {
     margin-bottom: 1rem;
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-mo-body1);
   }
 
   .hero-copy > p:not(.eyebrow) {
     margin-bottom: 1.125rem;
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-mo-body2);
   }
 
   .pill-button,
@@ -514,7 +564,7 @@ button {
     min-width: 0;
     width: auto;
     padding: 0.75rem 1.125rem;
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-mo-body2);
   }
 
   .section {
@@ -523,22 +573,33 @@ button {
 
   .section-title,
   .section-kicker {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-mo-h2);
   }
 
   .section-intro > p:not(.section-kicker) {
     margin: 1.5rem 0 2rem;
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-mo-body1);
   }
 
-  .new-gallery,
   .instagram-grid,
-  .product-grid,
   .footer-links {
     grid-template-columns: 1fr;
   }
 
-  .new-card,
+  .instagram-swiper {
+    overflow: hidden;
+  }
+
+  .new-gallery-track {
+    gap: 1rem;
+  }
+
+  .new-card {
+    flex-basis: min(18rem, 78vw);
+    width: min(18rem, 78vw);
+    height: 22.5rem;
+  }
+
   .lookbook-image {
     height: 22.5rem;
   }
@@ -552,7 +613,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-mo-h4);
   }
 
   .lookbook {
