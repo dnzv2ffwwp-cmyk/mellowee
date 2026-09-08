@@ -60,6 +60,7 @@ body.subpage {
 .page-heading {
   margin: 0;
   font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
   line-height: 1.25;
   text-align: center;
 }

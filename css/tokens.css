@@ -9,6 +9,7 @@
  * before using these classes. Figma's AUTO line height maps to CSS `normal`.
  */
 
+
 :root {
   /* Font families */
   --font-pc: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -36,32 +37,32 @@
 
 
   /* PC text styles */
-  /* --fs-pc-h1: 39px;
-  --fs-pc-h2: 31px;
-  --fs-pc-h3: 25px;
-  --fs-pc-h4: 20px;
-  --fs-pc-body1: 16px;
-  --fs-pc-body2: 13px;
-  --fs-pc-detail: 10px; */
+  /* --fs-h1: 39px;
+  --fs-h2: 31px;
+  --fs-h3: 25px;
+  --fs-h4: 20px;
+  --fs-body1: 16px;
+  --fs-body2: 13px;
+  --fs-detail: 10px; */
 
 
   /* Pad text styles */
-  /* --fs-pad-h1: 34px;
-  --fs-pad-h2: 27px;
-  --fs-pad-h3: 22px;
-  --fs-pad-h4: 18px;
-  --fs-pad-body1: 14px;
-  --fs-pad-body2: 11px;
-  --fs-pad-detail: 9px; */
+  /* --fs-h1: 34px;
+  --fs-h2: 27px;
+  --fs-h3: 22px;
+  --fs-h4: 18px;
+  --fs-body1: 14px;
+  --fs-body2: 11px;
+  --fs-detail: 9px; */
 
   /* Mobile text styles */
-  /* --fs-mo-h1: 19px;
-  --fs-mo-h2: 17px;
-  --fs-mo-h3: 15px;
-  --fs-mo-h4: 14px;
-  --fs-mo-body1: 12px;
-  --fs-mo-body2: 11px;
-  --fs-mo-detail: 9px; */
+  /* --fs-h1: 19px;
+  --fs-h2: 17px;
+  --fs-h3: 15px;
+  --fs-h4: 14px;
+  --fs-body1: 12px;
+  --fs-body2: 11px;
+  --fs-detail: 9px; */
 
 
   /* Main colors */
@@ -168,129 +169,129 @@
   /* PC: one-to-one mappings for Figma PC styles */
   .text-pc-h1-regular,
   .text-pc-h1-bold {
-    font-size: var(--fs-pc-h1);
+    font-size: var(--fs-h1);
     line-height: var(--lh-pc-h1);
   }
 
   .text-pc-h2-regular,
   .text-pc-h2-bold {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-h2);
     line-height: var(--lh-pc-h2);
   }
 
   .text-pc-h3-regular,
   .text-pc-h3-bold {
-    font-size: var(--fs-pc-h3);
+    font-size: var(--fs-h3);
     line-height: var(--lh-pc-h3);
   }
 
   .text-pc-h4-regular,
   .text-pc-h4-bold {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-h4);
     line-height: var(--lh-pc-h4);
   }
 
   .text-pc-body1-regular,
   .text-pc-body1-bold {
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-body1);
     line-height: var(--lh-pc-body1);
   }
 
   .text-pc-body2-regular,
   .text-pc-body2-bold {
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-body2);
     line-height: var(--lh-pc-body2);
   }
 
   .text-pc-detail-regular,
   .text-pc-detail-bold {
-    font-size: var(--fs-pc-detail);
+    font-size: var(--fs-detail);
     line-height: var(--lh-pc-detail);
   }
 
   /* Pad: one-to-one mappings for Figma pad styles */
   .text-pad-h1-regular,
   .text-pad-h1-bold {
-    font-size: var(--fs-pad-h1);
+    font-size: var(--fs-h1);
     line-height: var(--lh-pad-h1);
   }
 
   .text-pad-h2-regular,
   .text-pad-h2-bold {
-    font-size: var(--fs-pad-h2);
+    font-size: var(--fs-h2);
     line-height: var(--lh-pad-h2);
   }
 
   .text-pad-h3-regular,
   .text-pad-h3-bold {
-    font-size: var(--fs-pad-h3);
+    font-size: var(--fs-h3);
     line-height: var(--lh-pad-h3);
   }
 
   .text-pad-h4-regular,
   .text-pad-h4-bold {
-    font-size: var(--fs-pad-h4);
+    font-size: var(--fs-h4);
     line-height: var(--lh-pad-h4);
   }
 
   .text-pad-body1-regular,
   .text-pad-body1-bold {
-    font-size: var(--fs-pad-body1);
+    font-size: var(--fs-body1);
     line-height: var(--lh-pad-body1);
   }
 
   .text-pad-body2-regular,
   .text-pad-body2-bold {
-    font-size: var(--fs-pad-body2);
+    font-size: var(--fs-body2);
     line-height: var(--lh-pad-body2);
   }
 
   .text-pad-detail-regular,
   .text-pad-detail-bold {
-    font-size: var(--fs-pad-detail);
+    font-size: var(--fs-detail);
     line-height: var(--lh-pad-detail);
   }
 
   /* Mobile: one-to-one mappings for Figma mo styles */
   .text-mo-h1-regular,
   .text-mo-h1-bold {
-    font-size: var(--fs-mo-h1);
+    font-size: var(--fs-h1);
     line-height: var(--lh-mo-h1);
   }
 
   .text-mo-h2-regular,
   .text-mo-h2-bold {
-    font-size: var(--fs-mo-h2);
+    font-size: var(--fs-h2);
     line-height: var(--lh-mo-h2);
   }
 
   .text-mo-h3-regular,
   .text-mo-h3-bold {
-    font-size: var(--fs-mo-h3);
+    font-size: var(--fs-h3);
     line-height: var(--lh-mo-h3);
   }
 
   .text-mo-h4-regular,
   .text-mo-h4-bold {
-    font-size: var(--fs-mo-h4);
+    font-size: var(--fs-h4);
     line-height: var(--lh-mo-h4);
   }
 
   .text-mo-body1-regular,
   .text-mo-body1-bold {
-    font-size: var(--fs-mo-body1);
+    font-size: var(--fs-body1);
     line-height: var(--lh-mo-body1);
   }
 
   .text-mo-body2-regular,
   .text-mo-body2-bold {
-    font-size: var(--fs-mo-body2);
+    font-size: var(--fs-body2);
     line-height: var(--lh-mo-body2);
   }
 
   .text-mo-detail-regular,
   .text-mo-detail-bold {
-    font-size: var(--fs-mo-detail);
+    font-size: var(--fs-detail);
     line-height: var(--lh-mo-detail);
   }
 
@@ -363,43 +364,50 @@
   }
 
   .text-h1 {
-    font-size: var(--fs-pc-h1);
+    font-size: var(--fs-h1);
     line-height: var(--lh-pc-h1);
   }
 
   .text-h2 {
-    font-size: var(--fs-pc-h2);
+    font-size: var(--fs-h2);
     line-height: var(--lh-pc-h2);
   }
 
   .text-h3 {
-    font-size: var(--fs-pc-h3);
+    font-size: var(--fs-h3);
     line-height: var(--lh-pc-h3);
   }
 
   .text-h4 {
-    font-size: var(--fs-pc-h4);
+    font-size: var(--fs-h4);
     line-height: var(--lh-pc-h4);
   }
 
   .text-body1 {
-    font-size: var(--fs-pc-body1);
+    font-size: var(--fs-body1);
     line-height: var(--lh-pc-body1);
   }
 
   .text-body2 {
-    font-size: var(--fs-pc-body2);
+    font-size: var(--fs-body2);
     line-height: var(--lh-pc-body2);
   }
 
   .text-detail {
-    font-size: var(--fs-pc-detail);
+    font-size: var(--fs-detail);
     line-height: var(--lh-pc-detail);
   }
 
   .is-bold {
     font-weight: var(--fw-bold);
   }
+
+html {
+  font-size: var(--fs-pc);
+  font-family: 'Pretendard', sans-serif;
+  font-weight: var(--fw-regular);
+  color: var(--mellowee-black-800);
+}
 
   @media (max-width: 1199px) {
     html {
@@ -417,37 +425,37 @@
     }
 
     .text-h1 {
-      font-size: var(--fs-pad-h1);
+      font-size: var(--fs-h1);
       line-height: var(--lh-pad-h1);
     }
 
     .text-h2 {
-      font-size: var(--fs-pad-h2);
+      font-size: var(--fs-h2);
       line-height: var(--lh-pad-h2);
     }
 
     .text-h3 {
-      font-size: var(--fs-pad-h3);
+      font-size: var(--fs-h3);
       line-height: var(--lh-pad-h3);
     }
 
     .text-h4 {
-      font-size: var(--fs-pad-h4);
+      font-size: var(--fs-h4);
       line-height: var(--lh-pad-h4);
     }
 
     .text-body1 {
-      font-size: var(--fs-pad-body1);
+      font-size: var(--fs-body1);
       line-height: var(--lh-pad-body1);
     }
 
     .text-body2 {
-      font-size: var(--fs-pad-body2);
+      font-size: var(--fs-body2);
       line-height: var(--lh-pad-body2);
     }
 
     .text-detail {
-      font-size: var(--fs-pad-detail);
+      font-size: var(--fs-detail);
       line-height: var(--lh-pad-detail);
     }
   }
@@ -469,37 +477,37 @@
     }
 
     .text-h1 {
-      font-size: var(--fs-mo-h1);
+      font-size: var(--fs-h1);
       line-height: var(--lh-mo-h1);
     }
 
     .text-h2 {
-      font-size: var(--fs-mo-h2);
+      font-size: var(--fs-h2);
       line-height: var(--lh-mo-h2);
     }
 
     .text-h3 {
-      font-size: var(--fs-mo-h3);
+      font-size: var(--fs-h3);
       line-height: var(--lh-mo-h3);
     }
 
     .text-h4 {
-      font-size: var(--fs-mo-h4);
+      font-size: var(--fs-h4);
       line-height: var(--lh-mo-h4);
     }
 
     .text-body1 {
-      font-size: var(--fs-mo-body1);
+      font-size: var(--fs-body1);
       line-height: var(--lh-mo-body1);
     }
 
     .text-body2 {
-      font-size: var(--fs-mo-body2);
+      font-size: var(--fs-body2);
       line-height: var(--lh-mo-body2);
     }
 
     .text-detail {
-      font-size: var(--fs-mo-detail);
+      font-size: var(--fs-detail);
       line-height: var(--lh-mo-detail);
     }
   }
@@ -517,11 +525,5 @@
     font-size: 48px;
     font-weight: 400;
   }
-}
 
-html {
-  font-size: var(--fs-pc);
-  font-family: 'Pretendard', sans-serif;
-  font-weight: var(--fw-regular);
-  color: var(--mellowee-black-800);
-}
+
