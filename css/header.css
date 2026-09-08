@@ -11,15 +11,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  padding: 0 48px;
+  height: 6.25rem;
+  padding: 0 3rem;
 }
 
 .brand-logo {
   position: relative;
   display: grid;
-  width: 200px;
-  height: 32px;
+  width: 12.5rem;
+  height: 2rem;
   place-items: center;
   overflow: hidden;
 }
@@ -38,7 +38,7 @@
   display: grid;
   color: #9ab281;
   font-family: Georgia, serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   letter-spacing: 0.08em;
   place-items: center;
   z-index: 0;
@@ -46,21 +46,26 @@
 
 .utility-menu {
   position: absolute;
-  top: 24px;
-  right: 48px;
-  display: grid;
-  grid-template-columns: repeat(3, 75px);
-  gap: 8px;
+  top: 1.5rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.utility-menu li {
+  flex: 0 0 auto;
+}
+
 .utility-menu a,
 .utility-menu button {
   display: flex;
-  width: 100%;
-  height: 52px;
+  width: 4.5rem;
+  height: 3.25rem;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
@@ -68,17 +73,18 @@
   border: 0;
   background: transparent;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
+.utility-menu svg,
 .utility-menu img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   object-fit: contain;
 }
 
 .main-nav {
-  height: 50px;
+  height: 3.125rem;
   background: var(--mellowee-primary-100, #ecf1e7);
 }
 
@@ -87,17 +93,17 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  gap: clamp(22px, 2.5vw, 48px);
+  gap: clamp(1.375rem, 2.5vw, 3rem);
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 3rem;
   list-style: none;
 }
 
 .main-nav a {
   display: flex;
-  height: 50px;
+  height: 3.125rem;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   white-space: nowrap;
   transition: color 0.2s ease;
@@ -110,42 +116,49 @@
 
 @media (max-width: 1450px) {
   .utility-menu {
-    grid-template-columns: repeat(3, 66px);
+    gap: 0.25rem;
+  }
+
+  .utility-menu a,
+  .utility-menu button {
+    width: 4rem;
   }
 
   .main-nav ul {
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .main-nav a {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 1024px) {
   .header-top {
-    height: 88px;
-    padding: 0 24px;
+    height: 5.5rem;
+    padding: 0 1.5rem;
   }
 
   .brand-logo {
-    width: 160px;
+    width: 10rem;
   }
 
   .utility-menu {
-    right: 24px;
-    grid-template-columns: repeat(3, 58px);
+    right: 1.5rem;
+    gap: 0.125rem;
   }
 
   .utility-menu a,
   .utility-menu button {
-    height: 46px;
-    font-size: 11px;
+    width: 3.5rem;
+    height: 2.875rem;
+    font-size: 0.6875rem;
   }
 
+  .utility-menu svg,
   .utility-menu img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   .main-nav {
@@ -155,48 +168,48 @@
   .main-nav ul {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px 18px;
-    padding: 12px 24px 14px;
+    gap: 0.625rem 1.125rem;
+    padding: 0.75rem 1.5rem 0.875rem;
   }
 
   .main-nav a {
     height: auto;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 680px) {
   .header-top {
-    height: 78px;
-    padding: 0 16px;
+    height: 4.875rem;
+    padding: 0 1rem;
     justify-content: flex-start;
   }
 
   .brand-logo {
-    width: 138px;
+    width: 8.625rem;
   }
 
   .utility-menu {
-    top: 18px;
-    right: 14px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 4px;
+    top: 1.125rem;
+    right: 0.875rem;
+    gap: 0.125rem;
   }
 
   .utility-menu a,
   .utility-menu button {
-    height: 42px;
-    gap: 4px;
-    font-size: 10px;
+    width: 3rem;
+    height: 2.625rem;
+    gap: 0.25rem;
+    font-size: 0.5625rem;
   }
 
   .main-nav ul {
-    gap: 8px 12px;
-    padding: 10px 16px 12px;
+    gap: 0.5rem 0.75rem;
+    padding: 0.625rem 1rem 0.75rem;
   }
 
   .main-nav a {
-    font-size: 11px;
+    font-size: 0.6875rem;
     line-height: 1.2;
   }
 }
