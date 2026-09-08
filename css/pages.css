@@ -24,7 +24,7 @@ body.subpage {
   display: inline-flex;
   align-items: center;
   font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
-  font-size: var(--fs-pc-h3);
+  font-size: var(--fs-h3);
   font-weight: 800;
   letter-spacing: 0.015em;
   line-height: 1;
@@ -54,12 +54,12 @@ body.subpage {
   padding-bottom: 3rem;
   padding-right: 3rem;
   color: var(--mellowee-black-500);
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
 }
 
 .page-heading {
   margin: 0;
-  font-size: var(--fs-pc-h2);
+  font-size: var(--fs-h2);
   line-height: 1.25;
   text-align: center;
 }
@@ -84,7 +84,7 @@ body.subpage {
   padding: 0 1.5rem;
   border: 1px solid var(--mellowee-primary-500);
   cursor: pointer;
-  font-size: var(--fs-pc-body1);
+  font-size: var(--fs-body1);
   font-weight: var(--fw-bold);
 }
 
@@ -107,7 +107,7 @@ body.subpage {
   text-align: center;
   border-color: var(--mellowee-black-200);
   background: var(--mellowee-black-000);
-  font-size: var(--fs-pc-body2);
+  font-size: var(--fs-body2);
   line-height: 1.2;
   font-weight: var(--fw-regular);
 }
