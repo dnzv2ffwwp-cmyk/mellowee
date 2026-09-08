@@ -6,7 +6,7 @@ const logoMarkup = `
     <span>M</span><span>E</span><span>L</span><span>L</span><span>O</span><span>W</span><span>E</span><span>E</span>
   </span>`;
 
-const headerLogoMarkup = '<img src="./assets/mellowee-logo.svg" alt="MELLOWEE" />';
+const headerLogoMarkup = '<img src="./img/icon/icon_logo_pc.svg" alt="MELLOWEE" />';
 
 const icon = (name) => {
   const icons = {
@@ -51,7 +51,7 @@ if (footerRoot) {
     <footer class="site-footer">
       <div class="flogo">
         <a href="./index.html">
-          <img src="./assets/mellowee-logo.svg" alt="mellowee logo" />
+          <img src="./img/icon/icon_logo_pc.svg" alt="mellowee logo" />
         </a>
       </div>
       <div class="footer-main page-shell">
