@@ -15,7 +15,7 @@
   --font-pc: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-pad: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mo: "Roboto", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
+  --font-point: "Mabook", sans-serif;
   /* Font weights */
   --fw-regular: 400;
   --fw-bold: 700;
@@ -37,6 +37,34 @@
 
 
   /* PC text styles */
+<<<<<<< HEAD
+  --fs-pc-h1: 39px;
+  --fs-pc-h2: 31px;
+  --fs-pc-h3: 25px;
+  --fs-pc-h4: 20px;
+  --fs-pc-body1: 16px;
+  --fs-pc-body2: 13px;
+  --fs-pc-detail: 10px;
+
+
+  /* Pad text styles */
+  --fs-pad-h1: 34px;
+  --fs-pad-h2: 27px;
+  --fs-pad-h3: 22px;
+  --fs-pad-h4: 18px;
+  --fs-pad-body1: 14px;
+  --fs-pad-body2: 11px;
+  --fs-pad-detail: 9px;
+
+  /* Mobile text styles */
+  --fs-mo-h1: 19px;
+  --fs-mo-h2: 17px;
+  --fs-mo-h3: 15px;
+  --fs-mo-h4: 14px;
+  --fs-mo-body1: 12px;
+  --fs-mo-body2: 11px;
+  --fs-mo-detail: 9px;
+=======
   /* --fs-h1: 39px;
   --fs-h2: 31px;
   --fs-h3: 25px;
@@ -63,6 +91,7 @@
   --fs-body1: 12px;
   --fs-body2: 11px;
   --fs-detail: 9px; */
+>>>>>>> ab4a679447ff3856cc48add1a28a8e6167a0f973
 
 
   /* Main colors */
@@ -140,6 +169,18 @@
   --section-gap: 120px;
   /* Set global base font to the PC token so styles.css uses consistent family */
   --font-family-base: var(--font-pc);
+<<<<<<< HEAD
+}
+
+/* Shared Figma text-style properties */
+[class^="text-pc-"],
+[class*=" text-pc-"] {
+  font-family: var(--font-pc);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
+=======
+>>>>>>> ab4a679447ff3856cc48add1a28a8e6167a0f973
 }
   /* Shared Figma text-style properties */
   [class^="text-pc-"],
@@ -526,4 +567,21 @@ html {
     font-weight: 400;
   }
 
+<<<<<<< HEAD
+@font-face {
+  font-family: "Mabook";
+  src: url("../assets/fonts/Mabook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+.point-title {
+  font-family: "Mabook", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+=======
+
+>>>>>>> ab4a679447ff3856cc48add1a28a8e6167a0f973
