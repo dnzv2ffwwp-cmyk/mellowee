@@ -19,6 +19,10 @@ body.subpage {
 .subpage-header .page-shell {
   width: min(100%, 108rem);
 }
+.header-top.page-shell.hwidth-shell{
+  width: min(100%, 120rem);
+  margin-inline: auto;
+}
 
 .word-logo {
   display: inline-flex;

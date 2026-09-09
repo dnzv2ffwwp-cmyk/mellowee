@@ -21,7 +21,7 @@ const icon = (name) => {
 if (headerRoot) {
   headerRoot.outerHTML = `
     <header class="site-header subpage-header">
-      <div class="header-top page-shell">
+      <div class="header-top page-shell hwidth-shell">
         <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">${headerLogoMarkup}</a>
         <ul class="utility-menu" aria-label="사용자 메뉴">
           <li><a href="./login.html#signup">${icon("signup")}<span>회원가입</span></a></li>
@@ -55,7 +55,7 @@ if (footerRoot) {
         <img src="./assets/mellowee-logo.svg" alt="mellowee logo">
       </a>
     </div>
-    <div class="footer-main page-shell">
+    <div class="footer-main page-shell fwidth-shell">
       <div class="footer-brand">
         <ul class="info1">
           <li><a href="#">이용약관</a></li>
