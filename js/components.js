@@ -10,12 +10,12 @@ const headerLogoMarkup = '<img src="./img/icon/icon_logo_pc.svg" alt="MELLOWEE" 
 
 const icon = (name) => {
   const icons = {
-    signup: '<path d="M15 19a6 6 0 0 0-12 0"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/>',
-    login: '<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/>',
-    search: '<circle cx="11" cy="11" r="5"/><path d="M16 16l5 5"/>',
-    cart: '<path d="M3 4h2l2 11h10l2-7H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/>',
+    signup: './img/icon/icon_signup.svg',
+    login: './img/icon/icon_login.svg',
+    search: './img/icon/icon_search.svg',
+    cart: './img/icon/icon_cart.svg',
   };
-  return `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icons[name]}</svg>`;
+  return `<img src="${icons[name]}" alt="icon" />`;
 };
 
 if (headerRoot) {
@@ -25,9 +25,9 @@ if (headerRoot) {
         <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">${headerLogoMarkup}</a>
         <ul class="utility-menu" aria-label="사용자 메뉴">
           <li><a href="./login.html#signup">${icon("signup")}<span>회원가입</span></a></li>
-          <li><a href="./login.html">${icon("login")}<span>LOG IN</span></a></li>
-          <li><a href="#">${icon("search")}<span>SEARCH</span></a></li>
-          <li><a href="./recently-viewed.html">${icon("cart")}<span>CART</span></a></li>
+          <li><a href="./login.html">${icon("login")}<span>로그인</span></a></li>
+          <li><a href="#">${icon("search")}<span>검색</span></a></li>
+          <li><a href="./recently-viewed.html">${icon("cart")}<span>장바구니</span></a></li>
         </ul>
       </div>
       <nav class="main-nav" aria-label="주요 메뉴">
