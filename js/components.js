@@ -25,9 +25,9 @@ if (headerRoot) {
         <a class="brand-logo" href="./index.html" aria-label="멜로위 홈">${headerLogoMarkup}</a>
         <ul class="utility-menu" aria-label="사용자 메뉴">
           <li><a href="./login.html#signup">${icon("signup")}<span>회원가입</span></a></li>
-          <li><a href="./login.html">${icon("login")}<span>LOG IN</span></a></li>
-          <li><a href="#">${icon("search")}<span>SEARCH</span></a></li>
-          <li><a href="./recently-viewed.html">${icon("cart")}<span>CART</span></a></li>
+          <li><a href="./login.html">${icon("login")}<span>로그인</span></a></li>
+          <li><a href="#">${icon("search")}<span>검색</span></a></li>
+          <li><a href="./recently-viewed.html">${icon("cart")}<span>장바구니</span></a></li>
         </ul>
       </div>
       <nav class="main-nav" aria-label="주요 메뉴">

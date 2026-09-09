@@ -121,21 +121,10 @@ body.subpage {
 */
 
 @media (max-width: 1024px) {
-  .subpage-header .main-nav { overflow-x: auto; }
-  .subpage-header .main-nav ul { width: max-content; min-width: 100%; padding-inline: 1.5rem; }
   .footer-main { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 402px) {
-  .subpage-header .header-top { height: 4.875rem; justify-content: flex-start; padding: 0 1.125rem; }
-  .subpage-header .brand-logo { width: 9.0625rem; justify-items: start; }
-  .subpage-header .word-logo { font-size: 1.3125rem; }
-  .subpage-header .utility-menu { top: 1.1875rem; right: 0.875rem; grid-template-columns: repeat(3, 2.5rem); }
-  .subpage-header .utility-menu a,
-  .subpage-header .utility-menu button { height: 2.625rem; justify-content: center; }
-  .subpage-header .utility-menu span { display: none; }
-  .subpage-header .main-nav { height: 2.75rem; }
-  .subpage-header .main-nav a { height: 2.75rem; font-size: 0.75rem; }
   .breadcrumb { padding: 1.625rem 1.125rem 0; }
   .footer-main { padding: 0 1.25rem 2.375rem; }
   .footer-links { grid-template-columns: 1fr 1fr; }
