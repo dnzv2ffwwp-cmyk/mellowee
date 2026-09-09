@@ -103,7 +103,7 @@ button {
   line-height: 1.65;
 }
 
-.pill-button,
+
 .outline-button {
   display: inline-flex;
   align-items: center;
@@ -115,6 +115,19 @@ button {
   font-size: var(--fs-body2);
   font-weight: var(--fw-bold);
   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pill-button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  border-radius: 5rem;
+  font-size: var(--fs-body2);
+  font-weight: var(--fw-bold);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border: 1px solid red;
+  width: 40%;
 }
 
 .pill-button {
@@ -357,9 +370,11 @@ button {
   border-top: 0.0625rem dashed var(--mellowee-primary-300, #cedac2);
   border-bottom: 0.0625rem dashed var(--mellowee-primary-300, #cedac2);
 }
-
 .story-kicker {
   margin: 0;
+  font-family:"SchoolSafeOuting",
+    var(--font-pc, "Pretendard"),
+    sans-serif;
   color: var(--mellowee-primary-800, #444d3a);
   font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
@@ -368,10 +383,12 @@ button {
 .story-copy h2 {
   margin: 0 0 1.75rem;
   color: var(--mellowee-primary-500, #a1b889);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: var(--fs-h1);
-  font-weight: var(--fw-regular);
-  letter-spacing: -0.02em;
+   font-size: var(--fs-h1);
+  letter-spacing: -0.02em;  
+   font-family:
+    var(--font-point, "Mabook"),
+    var(--font-pc, "Pretendard"),
+    sans-serif;
 }
 
 .story-copy > p:not(.story-kicker) {

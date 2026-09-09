@@ -1,22 +1,28 @@
 const products = [
-  ["01-ivory-wrap-bodysuit.png", "아이보리 랩 바디수트", "39,000", "35,100", "newborn"],
-  ["02-dusty-pink-daisy-romper.png", "더스티 핑크 데이지 롬퍼", "43,000", "36,550", "baby"],
-  ["03-butter-moon-sleepsuit.png", "버터 문 슬립웨어", "42,000", "33,600", "newborn"],
-  ["04-powder-blue-knit-romper.png", "파우더 블루 니트 롬퍼", "38,000", "34,200", "baby"],
-  ["05-lavender-pinafore-set.png", "라벤더 피나포어 세트", "49,800", "44,800", "kids"],
-  ["06-terracotta-hood-set.png", "테라코타 후드 세트", "52,000", "47,200", "kids"],
-  ["07-blue-gingham-set.png", "블루 깅엄 데일리 세트", "47,000", "39,950", "baby"],
-  ["08-mustard-quilted-vest.png", "머스터드 퀼팅 베스트", "42,000", "38,400", "kids"],
-  ["09-mint-raincoat.png", "민트 레인 코트", "61,000", "54,900", "kids"],
-  ["10-dusty-rose-tiered-dress.png", "더스티 로즈 티어드 드레스", "51,000", "43,350", "kids"],
-  ["11-deep-teal-polo-set.png", "딥 틸 폴로 상하 세트", "48,000", "40,800", "junior"],
-  ["12-cocoa-corduroy-overall-set.png", "코코아 코듀로이 오버롤", "56,000", "47,600", "kids"],
-  ["13-coral-cardigan-skirt-set.png", "코랄 가디건 스커트 세트", "58,000", "49,300", "junior"],
-  ["14-sage-utility-jacket.png", "세이지 유틸리티 재킷", "55,000", "46,750", "junior"],
-  ["15-lavender-sweat-set.png", "라벤더 스웨트 세트", "49,000", "41,650", "kids"],
-  ["16-navy-sailor-dress.png", "네이비 세일러 원피스", "54,000", "45,900", "junior"],
-  ["17-butter-gingham-set.png", "버터 깅엄 상하 세트", "47,000", "39,950", "baby"],
-  ["18-oatmeal-trench-coat.png", "오트밀 트렌치 코트", "69,000", "58,650", "junior"],
+  ["01_softday_cotton_bodysuit.jpg", "소프트데이 코튼 바디수트", "42,000", "33,600", "newborn"],
+  ["02_oatmeal_pocket_overall.jpg", "오트밀 포켓 오버롤", "49,000", "39,200", "baby"],
+  ["03_little_morning_set.jpg", "리틀모닝 상하복 세트", "58,000", "46,400", "newborn"],
+  ["04_mellow_stripe_tee.jpg", "멜로우 스트라이프 티", "36,000", "30,600", "baby"],
+  ["05_cloud_knit_cardigan.jpg", "클라우드 니트 가디건", "54,000", "43,200", "kids"],
+  ["06_butter_cotton_bloomer.jpg", "버터 코튼 블루머	Bottom", "32,000", "27,200", "kids"],
+  ["07_pogeunbear_quilted_jumpsuit.jpg", "포근베어 퀼팅 점프수트", "68,000", "51,000", "baby"],
+  ["08_daisy_cotton_dress.jpg", "데이지 코튼 원피스", "44,000", "35,200", "kids"],
+  ["09_little_day_cotton_indoorwear.jpg", "리틀데이 코튼 실내복", "39,000", "35,100", "kids"],
+  ["10_forest_bear_bodysuit.jpg", "포레스트 베어 바디수트", "43,000", "36,550", "kids"],
+  ["11_natural_cotton_jogger_pants.jpg", "내추럴 코튼 조거팬츠", "34,000", "30,600", "junior"],
+  ["12_sage_pocket_sweatshirt.jpg", "세이지 포켓 맨투맨", "39,000", "33,150", "kids"],
+  ["13_round_cotton_leggings.jpg", "라운드 코튼 레깅스", "29,000", "26,100", "junior"],
+  ["14_ivory_frill_bodysuit.jpg", "아이보리 프릴 바디수트", "45,000", "36,000", "junior"],
+  ["15_soft_blue_denim_overall.jpg", "소프트 블루 데님 오버롤", "52,000", "44,200", "kids"],
+  ["16_latte_ribbed_tshirt.jpg", "라떼 골지 티셔츠", "32,000", "28,800", "junior"],
+  ["17_little_flower_bloomer_set.jpg", "리틀플라워 블루머 세트", "56,000", "44,800", "baby"],
+  ["18_cream_terry_sleep_vest.jpg", "크림 테리 수면조끼", "38,000", "30,400", "junior"],
+  ["19_butter_check_pajama_set.jpg", "버터 체크 파자마 세트", "47,000", "39,950", "junior"],
+  ["20_oatmeal_corduroy_pants.jpg", "오트밀 코듀로이 팬츠", "42,000", "33,600", "junior"],
+  ["21_breeze_cotton_shirt.jpg", "브리즈 코튼 셔츠", "43,000", "38,700", "junior"],
+  ["22_little_pocket_hood_zipup.jpg", "리틀포켓 후드 집업", "59,000", "47,200", "junior"],
+  ["23_warmday_fleece_vest.jpg", "웜데이 플리스 베스트", "48,000", "38,400", "junior"],
+  ["24_cloud_hood_padded_jumpsuit.jpg", "클라우드 후드 패딩 점프수트", "79,000", "55,300", "junior"],
 ].map(([image, name, original, sale, category], index) => ({ image, name, original, sale, category, index }));
 
 const productList = document.querySelector("[data-product-list]");
@@ -30,14 +36,14 @@ function productCard(product, best = false, position = 0) {
     <article class="catalog-card${best ? " catalog-card--best" : ""}" data-product-category="${product.category}">
       <a class="catalog-card__image" href="./product-detail.html">
         ${best ? `<span class="catalog-card__rank">BEST${position + 1}</span>` : position < 2 ? '<span class="catalog-card__new">NEW</span>' : ""}
-        <img src="./assets/products/${product.image}" alt="${product.name}" />
+        <img src="./img/product-list/${product.image}" alt="${product.name}" />
       </a>
       <div class="catalog-card__body">
-        <p class="catalog-card__brand">MELLOWEE</p>
-        <h3><a href="./product-detail.html">${product.name}</a></h3>
+        ${best ? "" : '<p class="catalog-card__brand">MELLOWEE</p>'}
+        <h3><a href="./product-detail.html">${best ? '<img class="catalog-card__best-star" src="./img/icon/icon_satr_yellow.svg" alt="" aria-hidden="true" />' : ""}${product.name}</a></h3>
         ${best ? "" : '<button class="catalog-card__wish" type="button" aria-label="찜하기">♡</button>'}
         <p class="catalog-card__price"><del>${product.original}원</del><strong>${product.sale}원</strong></p>
-        ${best ? "" : '<p class="catalog-card__point"><svg class="catalog-card__point-icon" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="4" fill="currentColor"></circle></svg>300원</p>'}
+        ${best ? "" : '<p class="catalog-card__point"><img src="./img/icon/icon_clarity_won_solid.svg" alt="원 아이콘" class="icon-won" /><span>300원</span></p>'}
       </div>
     </article>`;
 }
