@@ -50,7 +50,8 @@
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem 1rem;
+  gap: 3rem 1rem;
+  margin-bottom: 3rem;
 }
 
 .catalog-grid--best {
@@ -142,7 +143,7 @@
 }
 
 .catalog-card h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: var(--fs-h4);  
 }
 
