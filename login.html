@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="./css/login.css" />
     <script src="./js/components.js" defer></script>
     <script src="./js/pages.js" defer></script>
-  </head>
+    <script src="./js/header.js" defer></script>
+</head>
   <body class="subpage">
     <div data-site-header></div>
     <main class="login-page">
@@ -32,7 +33,14 @@
         <div class="login-links"><a href="#find-id">아이디 찾기</a><a href="#find-password">비밀번호 찾기</a></div>
         <section class="join-card" id="signup"><h2>아직 회원이 아니신가요?</h2><p>지금 회원가입을 하시면<br />다양하고 특별한 혜택이 준비되어 있습니다.</p><a class="secondary-button" href="#join">회원가입</a></section>
         <p class="sns-title">SNS 로그인</p>
-        <div class="sns-buttons"><button class="sns-button sns-button--kakao" type="button"><b>TALK</b>카카오 로그인</button><button class="sns-button sns-button--naver" type="button"><b>N</b>네이버 로그인</button></div>
+        <div class="sns-buttons">
+          <button class="sns-button sns-button--kakao" type="button">
+            <img src="./img/icon/icon_kakao_yellow_pc.svg" alt="카카오톡 아이콘" class="sns-icon" />카카오 로그인
+          </button>
+          <button class="sns-button sns-button--naver" type="button">
+            <img src="./img/icon/icon_naver_pc.svg" alt="네이버 아이콘" class="sns-icon" />네이버 로그인
+          </button>
+        </div>
       </section>
     </main>
     <div data-site-footer></div>

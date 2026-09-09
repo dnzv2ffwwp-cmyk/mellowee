@@ -6,8 +6,8 @@ body.subpage {
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -17,47 +17,50 @@ body.subpage {
 
 .subpage .page-shell,
 .subpage-header .page-shell {
-  width: min(100%, 1728px);
+  width: min(100%, 108rem);
 }
 
 .word-logo {
   display: inline-flex;
   align-items: center;
   font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
-  font-size: 27px;
+  font-size: var(--fs-h3);
   font-weight: 800;
   letter-spacing: 0.015em;
   line-height: 1;
 }
 
-.word-logo span:nth-child(4n + 1) { color: #9fb78a; }
-.word-logo span:nth-child(4n + 2) { color: #efb3b4; }
-.word-logo span:nth-child(4n + 3) { color: #e5ca86; }
-.word-logo span:nth-child(4n) { color: #d6b493; }
+.word-logo span:nth-child(4n + 1) { color: var(--mellowee-primary-400); }
+.word-logo span:nth-child(4n + 2) { color: var(--mellowee-pink-400); }
+.word-logo span:nth-child(4n + 3) { color: var(--mellowee-beige-400); }
+.word-logo span:nth-child(4n) { color: var(--mellowee-beige-500); }
 
 .utility-menu svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .subpage-main {
-  min-height: 850px;
+  min-height: 53.125rem;
 }
 
 .breadcrumb {
   display: flex;
   justify-content: flex-end;
-  gap: 7px;
-  max-width: 1600px;
+  gap: 1.125rem;
+  max-width: 100rem;
   margin: 0 auto;
-  padding: 46px 40px 0;
-  color: #777;
-  font-size: 13px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  color: var(--mellowee-black-500);
+  font-size: var(--fs-body1);
 }
 
 .page-heading {
   margin: 0;
-  font-size: 34px;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
   line-height: 1.25;
   text-align: center;
 }
@@ -67,8 +70,8 @@ body.subpage {
 }
 
 .page-subtitle {
-  margin: 14px 0 0;
-  color: #777;
+  margin: 0.875rem 0 0;
+  color: var(--mellowee-black-500);
   text-align: center;
 }
 
@@ -76,33 +79,38 @@ body.subpage {
 .secondary-button,
 .ghost-button {
   display: inline-flex;
-  min-height: 48px;
+  min-height: 3rem;
   align-items: center;
   justify-content: center;
-  padding: 0 28px;
+  padding: 0 1.5rem;
   border: 1px solid var(--mellowee-primary-500);
   cursor: pointer;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: var(--fs-body1);
+  font-weight: var(--fw-bold);
 }
 
 .primary-button {
-  color: #fff;
+  color: var(--mellowee-black-000);
   background: var(--mellowee-primary-500);
 }
 
 .primary-button:hover { background: var(--mellowee-primary-600); }
 
 .secondary-button {
-  color: #222;
-  background: #fff;
+  color: var(--mellowee-black-800);
+  background: var(--mellowee-black-000);
 }
 
 .ghost-button {
-  min-height: 40px;
-  border-color: #ccc;
-  background: #fff;
-  font-weight: 400;
+  min-height: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-color: var(--mellowee-black-200);
+  background: var(--mellowee-black-000);
+  font-size: var(--fs-body2);
+  line-height: 1.2;
+  font-weight: var(--fw-regular);
 }
 /* page-specific rules moved to separate files:
    css/product-list.css
@@ -112,24 +120,13 @@ body.subpage {
    css/brand-story.css
 */
 
-@media (max-width: 1199px) {
-  .subpage-header .main-nav { overflow-x: auto; }
-  .subpage-header .main-nav ul { width: max-content; min-width: 100%; padding-inline: 24px; }
+@media (max-width: 1024px) {
   .footer-main { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 767px) {
-  .subpage-header .header-top { height: 78px; justify-content: flex-start; padding: 0 18px; }
-  .subpage-header .brand-logo { width: 145px; justify-items: start; }
-  .subpage-header .word-logo { font-size: 21px; }
-  .subpage-header .utility-menu { top: 19px; right: 14px; grid-template-columns: repeat(3, 40px); }
-  .subpage-header .utility-menu a,
-  .subpage-header .utility-menu button { height: 42px; justify-content: center; }
-  .subpage-header .utility-menu span { display: none; }
-  .subpage-header .main-nav { height: 44px; }
-  .subpage-header .main-nav a { height: 44px; font-size: 12px; }
-  .breadcrumb { padding: 26px 18px 0; }
-  .footer-main { padding: 0 20px 38px; }
+@media (max-width: 402px) {
+  .breadcrumb { padding: 1.625rem 1.125rem 0; }
+  .footer-main { padding: 0 1.25rem 2.375rem; }
   .footer-links { grid-template-columns: 1fr 1fr; }
-  .payment { padding-inline: 20px; }
+  .payment { padding-inline: 1.25rem; }
 }

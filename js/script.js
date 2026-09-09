@@ -64,3 +64,51 @@ document.querySelectorAll("img[data-hide-on-error]").forEach((image) => {
 
 showSlide(0);
 startSlider();
+
+if (window.Swiper) {
+  new Swiper(".product-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    loop: true,
+    speed: 500,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
+  new Swiper(".instagram-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    loop: true,
+    speed: 500,
+    grabCursor: true,
+    autoplay: {
+      delay: 2600,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}
