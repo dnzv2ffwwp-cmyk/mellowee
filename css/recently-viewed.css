@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 0 2.5rem 8.125rem;
 }
-.recent-item__content > h2 {margin-bottom: .5rem;}
+.recent-item__content > h2 {margin-bottom: .5rem; font-size:var(--fs-h4); font-weight: var( --fw-bold); }
 .account-sidebar{ padding-left: 1rem; padding-right: 1rem;}
 .account-sidebar h2 { margin: 0 0 1rem; font-size: var(--fs-body1); font-weight: var( --fw-bold); }
 .account-sidebar h3 { margin: 3rem 0 1rem; font-size: var(--fs-body1); font-weight: var( --fw-bold); }
@@ -46,7 +46,7 @@
 .recent-item__price li { list-style: none; }
 .recent-item__price del { display: block; color: var(--mellowee-black-400); }
 .recent-item__price strong { font-size: var(--fs-body1); }
-.recent-item__point { margin: 0.25rem 0; color: var(--mellowee-black-400); font-size: var(--fs-body1); }
+.recent-item__point { margin: 0.5rem 0; color: var(--mellowee-black-400); font-size: var(--fs-body1); }
 .recent-item__point img.icon-won { width: 1em; height: 1em; display: inline-block; margin-right: 0.25rem; vertical-align: middle; }
 .recent-item__point span { vertical-align: middle; }
 
@@ -175,6 +175,16 @@
       color:var(--mellowee-black-800);
 
       box-sizing:border-box;
+  }
+   /* 1024px 이하에서는 사이드바 숨김 */
+  .account-sidebar {
+    display: none;
+  }
+
+  /* 사이드바가 없어졌으므로 콘텐츠를 1열로 */
+  .account-layout { 
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 
