@@ -176,6 +176,16 @@
 
       box-sizing:border-box;
   }
+   /* 1024px 이하에서는 사이드바 숨김 */
+  .account-sidebar {
+    display: none;
+  }
+
+  /* 사이드바가 없어졌으므로 콘텐츠를 1열로 */
+  .account-layout { 
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 /* Responsive: mobile */
