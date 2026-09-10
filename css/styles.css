@@ -490,7 +490,14 @@ button {
   .section {
     padding: 4.5rem 1.5rem;
   }
-
+  .section-intro {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .section-intro > p:not(.section-kicker) {
+    margin: 0.5rem;
+  }
+  .section-intro>p>br {display: none;}
   .new-items,
   .lookbook {
     grid-template-columns: 1fr;
@@ -528,6 +535,9 @@ button {
   .story-copy h2 {
     font-size: var(--fs-h2);
   }
+  .pill-button {
+    width: 100%;
+  } 
 }
 
 /* Mobile: 25.125rem (402px) 이하 */
@@ -618,7 +628,7 @@ button {
   }
 
   .story-copy h2 {
-    font-size: var(--fs-h4);
+    font-size: var(--fs-h2);
   }
 
   .lookbook {
