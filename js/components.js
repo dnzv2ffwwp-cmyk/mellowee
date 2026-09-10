@@ -99,7 +99,7 @@ if (footerRoot) {
         </div>
       </div>
     </div>
-    <div class="payment page-shell">
+    <div class="payment page-shell fwidth-shell">
       <p>payments 구매안전서비스</p>
       <p>고객님께서는 안전거래를 위해 결제 시 구매안전 서비스를 이용하실 수 있습니다.</p>
       <a href="#payment-check" class="bold-line">가입 사실 확인하기</a>
