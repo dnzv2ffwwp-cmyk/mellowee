@@ -168,3 +168,16 @@ if (footerRoot) {
     <div class="copyright">© 2026 MELLOWY. ALL RIGHTS RESERVED.</div>
   </footer>`;
 }
+
+const backToTopButton = document.createElement("button");
+backToTopButton.type = "button";
+backToTopButton.className = "back-to-top";
+backToTopButton.setAttribute("aria-label", "맨 위로 이동");
+backToTopButton.innerHTML = '<img src="./img/icon/icon-top.svg" alt="" width="48" height="48" />';
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+  });
+});
+document.body.append(backToTopButton);

@@ -39,6 +39,39 @@ button {
   color: inherit;
 }
 
+.back-to-top {
+  position: fixed;
+  right: max(2rem, env(safe-area-inset-right));
+  bottom: max(2rem, env(safe-area-inset-bottom));
+  z-index: 100;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.back-to-top img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--mellowee-primary-500, #a1b889);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .back-to-top {
+    right: max(1.5rem, env(safe-area-inset-right));
+    bottom: max(1.5rem, env(safe-area-inset-bottom));
+  }
+}
+
 .page-shell {
   width: min(100%, 120rem);
   margin-inline: auto;
